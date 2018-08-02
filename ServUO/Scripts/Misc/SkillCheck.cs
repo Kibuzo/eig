@@ -214,7 +214,7 @@ namespace Server.Misc
             {
                 if (from.Alive && (gc >= Utility.RandomDouble() || skill.Base < 10.0 || CheckGGS(from, skill)))
                 {
-					if (Utility.RandomDouble()>0.95*skill.Info.GainFactor) //guadagni skill solo nel 10% dei casi
+					if (Utility.RandomDouble()>(0.95/skill.Info.GainFactor)) //di default guadagni skill solo nel 5% dei casi
                     {Gain(from, skill);}
                 }
             }
