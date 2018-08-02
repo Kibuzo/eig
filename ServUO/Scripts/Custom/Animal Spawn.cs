@@ -115,7 +115,7 @@ namespace Server
   			if ( Utility.RandomDouble() < 0.9750 )
   				  return;
   			
-  			Map map = Map.Arsene;
+  			Map map = Map.Trammel;
   			IPooledEnumerable eable = map.GetItemsInRange(new Point3D(x, y, z), 20);
   			
   			foreach ( Item item in eable )
@@ -211,7 +211,7 @@ namespace Server
       			}
       			
       			spawner.Name = "Animal Spawner #" + m_Count;
-      			spawner.MoveToWorld( new Point3D( x, y, z), Map.Arsene);
+      			spawner.MoveToWorld( new Point3D( x, y, z), Map.Trammel);
       			spawner.MaxCount = MaxSpawn;
       			spawner.Hue = 346;
   			}
