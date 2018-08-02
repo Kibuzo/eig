@@ -134,7 +134,7 @@ namespace Server
   			XmlSpawner spawner = null;
   			int MaxSpawn = 0;
   			int Counter = 0;
-  			switch( Utility.Random(6) ) {
+		switch( Utility.Random(6) ) {
   			    case 0:
   			        spawner = new XmlSpawner( 10, 1, 3, 0, 0, Utility.RandomMinMax(22,30), "Bird" );
            			spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("Chicken", 4) );
@@ -152,8 +152,8 @@ namespace Server
           	case 2:
           	    spawner = new XmlSpawner( 4, 1, 3, 0, 0, Utility.RandomMinMax(18,24), "Dog" );
   			        spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("Cat", 4) );
-  			        spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("GiantRat", 2) );
-  			        spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("SewerRat", 4) );
+  			        //spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("GiantRat", 2) );
+  			        //spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("SewerRat", 4) );
   			        spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("JackRabbit", 4) );
   			        spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("Rabbit", 4) );
           			MaxSpawn = 10;
@@ -182,22 +182,22 @@ namespace Server
           			break;
           	case 5:
           	    spawner = new XmlSpawner( 6, 3, 7, 0, 0, Utility.RandomMinMax(8,10), "Gorilla" );
-          	    spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("Alligator", 3) );
-  			        spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("GiantSerpent", 2) );
-  			        spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("Raptor", 1) );
+          	    //spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("Alligator", 3) );
+  			        //spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("GiantSerpent", 2) );
+  			        //spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("Raptor", 1) );
           			MaxSpawn = 6;
           			Counter = 4;
           			break;
         }
         
-        //Spawn Orcs ( 30% )
+        //Spawn Orcs ( 10% )
         if ( spawner != null ) {
-            switch( Utility.Random(10) ) {
+            switch( Utility.Random(30) ) {
                 case 0:
-                case 1: // 20%
+                case 1: // 20/3%
                     spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("Orc", 2) );
                     break;
-                case 2: // 10%
+                case 2: // 10/3%
                     spawner.m_SpawnObjects.Add( new XmlSpawner.SpawnObject("OrcChopper", 2) );
                     break;
                 default:
