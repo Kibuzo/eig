@@ -202,18 +202,18 @@ namespace Server.Engines.Craft
             #endregion
             
             #region Hats
-            AddCraft(typeof(SkullCap), 1011375, 1025444, 0.0, 25.0, typeof(Cloth), 1044455, 2, 1044287);
-            AddCraft(typeof(Bandana), 1011375, 1025440, 0.0, 25.0, typeof(Cloth), 1044455, 2, 1044287);
+            AddCraft(typeof(SkullCap), 1011375, 1025444, 0.0, 35.0, typeof(Cloth), 1044455, 2, 1044287);
+            AddCraft(typeof(Bandana), 1011375, 1025440, 0.0, 35.0, typeof(Cloth), 1044455, 2, 1044287);
             AddCraft(typeof(FloppyHat), 1011375, 1025907, 6.2, 31.2, typeof(Cloth), 1044455, 11, 1044287);
-            AddCraft(typeof(Cap), 1011375, 1025909, 6.2, 31.2, typeof(Cloth), 1044455, 11, 1044287);
-            AddCraft(typeof(WideBrimHat), 1011375, 1025908, 6.2, 31.2, typeof(Cloth), 1044455, 12, 1044287);
-            AddCraft(typeof(StrawHat), 1011375, 1025911, 6.2, 31.2, typeof(Cloth), 1044455, 10, 1044287);
-            AddCraft(typeof(TallStrawHat), 1011375, 1025910, 6.7, 31.7, typeof(Cloth), 1044455, 13, 1044287);
-            AddCraft(typeof(WizardsHat), 1011375, 1025912, 7.2, 32.2, typeof(Cloth), 1044455, 15, 1044287);
-            AddCraft(typeof(Bonnet), 1011375, 1025913, 6.2, 31.2, typeof(Cloth), 1044455, 11, 1044287);
-            AddCraft(typeof(FeatheredHat), 1011375, 1025914, 6.2, 31.2, typeof(Cloth), 1044455, 12, 1044287);
-            AddCraft(typeof(TricorneHat), 1011375, 1025915, 6.2, 31.2, typeof(Cloth), 1044455, 12, 1044287);
-            AddCraft(typeof(JesterHat), 1011375, 1025916, 7.2, 32.2, typeof(Cloth), 1044455, 15, 1044287);
+            AddCraft(typeof(Cap), 1011375, 1025909, 10.2, 35.2, typeof(Cloth), 1044455, 11, 1044287);
+            AddCraft(typeof(WideBrimHat), 1011375, 1025908, 13.2, 38.2, typeof(Cloth), 1044455, 12, 1044287);
+            AddCraft(typeof(StrawHat), 1011375, 1025911, 15.2, 40.2, typeof(Cloth), 1044455, 10, 1044287);
+            AddCraft(typeof(TallStrawHat), 1011375, 1025910, 17.7, 42.7, typeof(Cloth), 1044455, 13, 1044287);
+            AddCraft(typeof(WizardsHat), 1011375, 1025912, 18.2, 43.2, typeof(Cloth), 1044455, 15, 1044287);
+            AddCraft(typeof(Bonnet), 1011375, 1025913, 17.2, 41.2, typeof(Cloth), 1044455, 11, 1044287);
+            AddCraft(typeof(FeatheredHat), 1011375, 1025914, 17.2, 41.2, typeof(Cloth), 1044455, 12, 1044287);
+            AddCraft(typeof(TricorneHat), 1011375, 1025915, 17.2, 41.2, typeof(Cloth), 1044455, 12, 1044287);
+            AddCraft(typeof(JesterHat), 1011375, 1025916, 20.2, 45.2, typeof(Cloth), 1044455, 15, 1044287);
 
             if (Core.AOS)
                 AddCraft(typeof(FlowerGarland), 1011375, 1028965, 10.0, 35.0, typeof(Cloth), 1044455, 5, 1044287);
@@ -249,9 +249,9 @@ namespace Server.Engines.Craft
             AddCraft(typeof(Shirt), 1111747, 1025399, 20.7, 45.7, typeof(Cloth), 1044455, 8, 1044287);
             AddCraft(typeof(FancyShirt), 1111747, 1027933, 24.8, 49.8, typeof(Cloth), 1044455, 8, 1044287);
             AddCraft(typeof(Tunic), 1111747, 1028097, 00.0, 25.0, typeof(Cloth), 1044455, 12, 1044287);
-            AddCraft(typeof(Surcoat), 1111747, 1028189, 8.2, 33.2, typeof(Cloth), 1044455, 14, 1044287);
+            AddCraft(typeof(Surcoat), 1111747, 1028189, 26.2, 51.2, typeof(Cloth), 1044455, 14, 1044287);
             AddCraft(typeof(PlainDress), 1111747, 1027937, 12.4, 37.4, typeof(Cloth), 1044455, 10, 1044287);
-            AddCraft(typeof(FancyDress), 1111747, 1027935, 33.1, 58.1, typeof(Cloth), 1044455, 12, 1044287);
+            AddCraft(typeof(FancyDress), 1111747, 1027935, 30.1, 58.1, typeof(Cloth), 1044455, 12, 1044287);
             AddCraft(typeof(Cloak), 1111747, 1025397, 41.4, 66.4, typeof(Cloth), 1044455, 14, 1044287);
             AddCraft(typeof(Robe), 1111747, 1027939, 53.9, 78.9, typeof(Cloth), 1044455, 16, 1044287);
             AddCraft(typeof(JesterSuit), 1111747, 1028095, 8.2, 33.2, typeof(Cloth), 1044455, 24, 1044287);
