@@ -20,7 +20,7 @@ namespace Server.Items
         {
         }
 
-        public override HarvestSystem HarvestSystem
+		public override HarvestSystem HarvestSystem{ get{ return DynamicMining.GetSystem(this); } }
         {
             get
             {
