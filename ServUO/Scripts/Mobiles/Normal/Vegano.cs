@@ -429,7 +429,7 @@ namespace Server.Mobiles
 			Utility.AssignRandomHair(this);
 		}
 
-		public Ambientalista(Serial serial)
+		public Amish(Serial serial)
 			: base(serial)
 		{
 		}
