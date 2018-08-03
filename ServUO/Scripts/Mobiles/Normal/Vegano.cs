@@ -388,7 +388,6 @@ namespace Server.Mobiles
 			AddItem (new SheafOfHay (1, 10));
 			AddItem (new Shirt());
 			Additem (new Shoes ());
-			AddItem (gold)
 
 			if (Female = Utility.RandomBool())
 			{
