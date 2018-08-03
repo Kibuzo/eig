@@ -63,9 +63,9 @@ namespace Server.Mobiles
 			get
 			{
 				//can use cliloc cf 1007072 if ores not custom
-				string ore = m_OreType.FullName;//use substring, my customs ore have a getname method
+				//string ore = 1007072;//m_OreType.FullName;//use substring, my customs ore have a getname method
 				
-				return "You place some "+ore+ " in your backpack";
+				return "You place some ores in your backpack";
 			}
 		}
 		
@@ -82,7 +82,7 @@ namespace Server.Mobiles
 		public Type OreType
 		{
 			get { return m_OreType; }
-			set { Type t = value; if(m_BaseType.IsAssignableFrom(t)){m_OreType = t; m_HarvestSystem=null;}}
+			set { Type t = value; /*if(m_BaseType.IsAssignableFrom(t))*/{m_OreType = t; m_HarvestSystem=null;}}
 		}
 		
 		private double m_ReqSkill = 0;

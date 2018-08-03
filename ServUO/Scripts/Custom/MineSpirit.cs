@@ -63,9 +63,9 @@ namespace Server.Mobiles
 			get
 			{
 				//can use cliloc cf 1007072 if ores not custom
-				//string ore = 1007072;//m_OreType.FullName;//use substring, my customs ore have a getname method
+				string ore = m_OreType.Name;//use substring, my customs ore have a getname method
 				
-				return "You place some ores in your backpack";
+				return "You place some "+ore+"ores in your backpack";
 			}
 		}
 		

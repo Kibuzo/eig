@@ -361,4 +361,164 @@ namespace Server.Mobiles
 			int version = reader.ReadInt();
 		}
 	}
+
+	[TypeAlias("Server.Mobiles.Amish")]
+	public class Amish : BaseCreature
+	{
+		[Constructable]
+		public Amish()
+			: base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+		{
+			bool Fem=false;
+			SpeechHue = 19;
+			Title = "the amish";
+			Hue = Utility.RandomSkinHue();
+
+			switch (Utility.Random (2)) {
+			case 0:
+				AddItem (new Carrot());
+				break;
+			case 1:
+				AddItem (new Squash());
+				break;
+			case 2:
+				AddItem (new Pumpkin());
+				break;
+			}
+			AddItem (new SheafOfHay (1, 10));
+			AddItem (new Shirt());
+			Additem (new Shoes ());
+			AddItem (gold)
+
+			if (Female = Utility.RandomBool())
+			{
+				Fem = true;
+				Body = 0x191;
+				Name = NameList.RandomName("female");
+				AddItem (new Skirt());
+			}
+			else
+			{
+				Body = 0x190;
+				Name = NameList.RandomName("male");
+				AddItem (new LongPants ());
+			}
+
+			SetStr(40, 60);
+			SetDex(30, 40);
+			SetInt(1, 5);
+			SetDamage(1, 2);
+			SetHits (80 - 90);
+
+			if (Fem)
+			{
+				SetStr (35,50);
+				SetDex (40,90);
+				SetInt (1,5);
+				SetHits (60 - 80);
+				SetDamage (2,3);
+			}
+
+			SetSkill(SkillName.Tactics, 3.0, 4.5);
+			SetSkill(SkillName.Wrestling, 3.0, 4.5);
+
+			Fame = 0;
+			Karma = -50;
+
+
+
+			Utility.AssignRandomHair(this);
+		}
+
+		public Ambientalista(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override bool ClickTitle
+		{
+			get
+			{
+				return false;
+			}
+		}
+		public override bool AlwaysMurderer
+		{
+			get
+			{
+				return true;
+			}
+		}
+
+		public override bool ShowFameTitle
+		{
+			get
+			{
+				return true;
+			}
+		}
+
+		public override bool OnBeforeDeath()
+		{
+			Say ("Manners sir, manners!");
+			return base.OnBeforeDeath();
+		}
+			
+
+		public override void GenerateLoot()
+		{
+			if Utility.RandomDouble()<0.2
+			{ AddLoot(LootPack.Poor); }
+		}
+
+		public override void OnGaveMeleeAttack( Mobile defender )
+		{
+			base.OnGaveMeleeAttack( defender );
+			if (Utility.RandomDouble()<0.5)
+			{
+				switch ( Utility.Random(1))
+				{
+				case 0:
+					Say ("I don't use kosher salt, I don't see why i should");
+					break;
+				case 1:
+					break;
+				}
+			}
+		}
+
+		public override void OnGotMeleeAttack( Mobile defender )
+		{
+			base.OnGaveMeleeAttack( defender );
+			if (Utility.RandomDouble()<0.5)
+			{
+				switch ( Utility.Random(2))
+				{
+				case 0:
+					Say ("Manners sir, manners!");
+					break;
+				case 1:
+					Say ("Oh, bloody hell!");
+					break;
+				case 2:
+					Say ("");
+					break;
+				}
+			}
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
 }
