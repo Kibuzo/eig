@@ -21,12 +21,7 @@ namespace Server.Items
         }
 
 		public override HarvestSystem HarvestSystem{ get{ return DynamicMining.GetSystem(this); } }
-        {
-            get
-            {
-                return Mining.System;
-            }
-        }
+
         public override WeaponAbility PrimaryAbility
         {
             get
