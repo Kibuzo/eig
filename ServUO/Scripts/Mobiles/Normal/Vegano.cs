@@ -385,9 +385,10 @@ namespace Server.Mobiles
 				AddItem (new Pumpkin());
 				break;
 			}
+
 			AddItem (new SheafOfHay ());
 			AddItem (new Shirt(Utility.RandomNeutralHue()));
-			Additem (new Shoes (Utility.RandomNeutralHue()));
+			AddItem (new Shoes (Utility.RandomNeutralHue()));
 
 			if (Female = Utility.RandomBool())
 			{
