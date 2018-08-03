@@ -466,7 +466,7 @@ namespace Server.Mobiles
 
 		public override void GenerateLoot()
 		{
-			if Utility.RandomDouble()<0.2
+			if (Utility.RandomDouble()<0.2)
 			{ AddLoot(LootPack.Poor); }
 		}
 
