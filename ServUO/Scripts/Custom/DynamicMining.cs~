@@ -67,16 +67,16 @@ namespace Server.Engines.Harvest
 			HarvestDefinition ore = m_Ore = new HarvestDefinition();
 
 			// Resource banks are every 8x8 tiles
-			ore.BankWidth = 2;
-			ore.BankHeight = 2;
+			ore.BankWidth = 8;
+			ore.BankHeight = 8;
 
 			// Every bank holds from 10 to 34 ore
-			ore.MinTotal = 20;
+			ore.MinTotal = 10;
 			ore.MaxTotal = 34;
 
 			// A resource bank will respawn its content every 10 to 20 minutes
 			ore.MinRespawn = TimeSpan.FromMinutes( 10.0 );
-			ore.MaxRespawn = TimeSpan.FromMinutes( 15.0 );
+			ore.MaxRespawn = TimeSpan.FromMinutes( 20.0 );
 
 			// Skill checking is done on the Mining skill
 			ore.Skill = SkillName.Mining;
