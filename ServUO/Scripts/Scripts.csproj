@@ -12471,6 +12471,7 @@
     <Compile Include="Mobiles\Normal\FuffaroMago.cs" />
     <Compile Include="Mobiles\Normal\Chainfuffaro.cs" />
     <Compile Include="Mobiles\Normal\PlateFuffaro.cs" />
+    <Compile Include="Items\Equipment\Weapons\OrgonicPickaxe.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Server\Server.csproj">
