@@ -67,7 +67,7 @@ namespace Server
 			typeof(VultureHelm), typeof(WingedHelm), typeof(LeafArms), typeof(LeafChest), typeof(LeafGloves), typeof(LeafGorget),
 			typeof(LeafLegs), typeof(WoodlandArms), typeof(WoodlandChest), typeof(WoodlandGloves), typeof(WoodlandGorget),
 			typeof(WoodlandLegs), typeof(HideChest), typeof(HideGloves), typeof(HideGorget), typeof(HidePants),
-			typeof(HidePauldrons)
+			typeof(HidePauldrons), typeof(OrgonicBoots), typeof(OrgonicKilt), typeof(OrgonicFemaleStuddedChest), typeof(OrgonicShirt)
 		};
 
         public static Type[] MLArmorTypes { get { return m_MLArmorTypes; } }
