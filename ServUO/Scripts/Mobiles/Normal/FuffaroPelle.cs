@@ -46,7 +46,7 @@ namespace Server.Mobiles
 						AddItem (new OrgonicFemaleStuddedChest ());
 					}
 					else {
-						AddItem (new FemaleStuddedChest())
+						AddItem (new FemaleStuddedChest ());
 					}
 					if (Utility.RandomDouble () > 0.9) 
 					{
