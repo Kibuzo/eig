@@ -11,6 +11,7 @@ namespace Server.Mobiles
 			: base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
 			bool Fem=false;
+			bool pelle = Utility.RandomBool ();
 			SpeechHue = 18;
 			Title = "the highly skeptic";
 			Hue = Utility.RandomSkinHue();
@@ -20,18 +21,87 @@ namespace Server.Mobiles
 				Fem = true;
 				Body = 0x191;
 				Name = NameList.RandomName("female");
-				AddItem(new OrgonicFemaleStuddedChest());
-				AddItem (new StuddedGloves ());
+
+				if (pelle) {
+					if (Utility.RandomDouble () > 0.9) 
+					{
+						AddItem (new OrgonicBustier ());
+					}
+					else {
+						AddItem (new LeatherBustierArms());
+					}
+					if (Utility.RandomDouble () > 0.9) 
+					{
+						AddItem (new OrgonicLeatherGloves ());
+					}
+					else {
+						AddItem (new LeatherGloves());
+					}
+					AddItem (new LeatherSkirt());
+				}
+
+				else {
+					if (Utility.RandomDouble () > 0.9) 
+					{
+						AddItem (new OrgonicFemaleStuddedChest ());
+					}
+					else {
+						AddItem (new FemaleStuddedChest())
+					}
+					if (Utility.RandomDouble () > 0.9) 
+					{
+						AddItem (new OrgonicStuddedGloves ());
+					}
+					else {
+						AddItem (new StuddedGloves());
+					}
+				}
 			}
+
 			else
 			{
 				Body = 0x190;
 				Name = NameList.RandomName("male");
-				AddItem(new OrgonicStuddedChest());
-				AddItem(new StuddedGloves());
+
+				if (pelle){
+					if (Utility.RandomDouble () > 0.9) 
+					{
+						AddItem (new OrgonicLeatherChest ());
+					}
+					else {
+						AddItem (new LeatherChest());
+					}
+					if (Utility.RandomDouble () > 0.9) 
+					{
+						AddItem (new OrgonicLeatherGloves ());
+					}
+					else {
+						AddItem (new LeatherGloves());
+					}
+				}
+				else
+				{
+					if (Utility.RandomDouble () > 0.9)
+					{
+						AddItem(new OrgonicStuddedChest());
+					}
+					else
+					{
+						AddItem(new StuddedChest());
+					}
+
+					if (Utility.RandomDouble () > 0.9) 
+					{
+						AddItem (new OrgonicStuddedGloves ());
+					}
+					else {
+						AddItem (new StuddedGloves());
+					}
+
 				AddItem(new StuddedLegs());
 				AddItem(new StuddedArms());
-				AddItem(new StuddedGorget());
+				AddItem(new LeatherGorget());
+				}
 			}
 
 			SetStr(86, 100);
