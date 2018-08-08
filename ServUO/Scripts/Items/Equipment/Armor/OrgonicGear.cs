@@ -485,7 +485,7 @@ public class OrgonicBoots : BaseShoes
 	public class OrgonicStuddedChest : BaseArmor
 	{
 		[Constructable]
-		public OrgonicFemaleStuddedChest()
+		public OrgonicStuddedChest()
 			: base(0x13DB)
 		{
 			this.Weight = 6.0;
@@ -493,7 +493,7 @@ public class OrgonicBoots : BaseShoes
 			this.Hue = 97;
 		}
 
-		public OrgonicFemaleStuddedChest(Serial serial)
+		public OrgonicStuddedChest(Serial serial)
 			: base(serial)
 		{
 		}
