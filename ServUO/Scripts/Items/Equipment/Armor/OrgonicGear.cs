@@ -860,7 +860,7 @@ public class OrgonicBoots : BaseShoes
 	}
 // Orgonic Leather Gloves
 	[Flipable]
-	public class OrgonicLeatherGloves : BaseArmor, IArcaneEquip
+	public class OrgonicLeatherGloves : BaseArmor
 	{
 		public override int BasePhysicalResistance
 		{
