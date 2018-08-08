@@ -27,7 +27,7 @@ namespace Server.Mobiles
 			{
 				Body = 0x190;
 				Name = NameList.RandomName("male");
-				AddItem(new StuddedChest());
+				AddItem(new OrgonicStuddedChest());
 				AddItem(new StuddedGloves());
 				AddItem(new StuddedLegs());
 				AddItem(new StuddedArms());

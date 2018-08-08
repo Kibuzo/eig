@@ -10,6 +10,7 @@ namespace Server.Items
             : base(0x13DB)
         {
             this.Weight = 8.0;
+
         }
 
         public StuddedChest(Serial serial)

@@ -53,8 +53,8 @@ namespace Server.Mobiles
 				SetDamage (5,7);
 			}
 				
-			SetSkill(SkillName.Tactics, 30.0, 45.5);
-			SetSkill(SkillName.Wrestling, 35.0, 47.5);
+			SetSkill(SkillName.Tactics, 20.0, 45.5);
+			SetSkill(SkillName.Wrestling, 25.0, 47.5);
 
 			Fame = 500;
 			Karma = -500;
@@ -416,14 +416,14 @@ namespace Server.Mobiles
 				SetDex (40,90);
 				SetInt (1,5);
 				SetHits (60 - 80);
-				SetDamage (2,3);
+				SetDamage (3,4);
 			}
 
-			SetSkill(SkillName.Tactics, 3.0, 4.5);
-			SetSkill(SkillName.Wrestling, 3.0, 4.5);
+			SetSkill(SkillName.Tactics, 3.0, 7.5);
+			SetSkill(SkillName.Wrestling, 3.0, 7.5);
 
 			Fame = 0;
-			Karma = -50;
+			Karma = 0;
 
 
 
@@ -454,7 +454,7 @@ namespace Server.Mobiles
 		{
 			get
 			{
-				return true;
+				return false;
 			}
 		}
 
