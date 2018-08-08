@@ -131,13 +131,13 @@ namespace Server.Mobiles
 				switch ( Utility.Random(2))
 				{
 				case 0:
-					c.DropItem (new OrgonicBoots (Utility.RandomNeutralHue()));
+					c.DropItem (new OrgonicBoots (591));
 					break;
 				case 1:
-					c.DropItem (new OrgonicKilt (Utility.RandomNeutralHue()));
+					c.DropItem (new OrgonicKilt (591));
 					break;
 				case 2:
-					c.DropItem (new OrgonicShirt (Utility.RandomNeutralHue()));
+					c.DropItem (new OrgonicShirt (591));
 					break;
 				}
 			}
