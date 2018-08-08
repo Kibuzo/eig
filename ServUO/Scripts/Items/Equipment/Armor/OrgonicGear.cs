@@ -935,6 +935,20 @@ public class OrgonicBoots : BaseShoes
 				return 5;
 			}
 		}
+		public override ArmorMaterialType MaterialType
+		{
+			get
+			{
+				return ArmorMaterialType.Leather;
+			}
+		}
+		public override CraftResource DefaultResource
+		{
+			get
+			{
+				return CraftResource.RegularLeather;
+			}
+		}
 			
 
 		public override ArmorMeditationAllowance DefMedAllowance
