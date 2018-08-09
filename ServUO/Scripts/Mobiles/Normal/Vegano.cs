@@ -335,7 +335,7 @@ namespace Server.Mobiles
 				switch ( Utility.Random(2))
 				{
 				case 0:
-					Say ("Is this amiantus??");
+					Say ("Is this asbestos??");
 					break;
 				case 1:
 					Say ("Ouch, your iron is poisoned!");

@@ -1,20 +1,17 @@
 ﻿<Properties StartupItem="Server/Server.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Scripts/Misc/SkillCheck.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Scripts/Mobiles/Normal/FuffaroPelle.cs">
     <Files>
-      <File FileName="Server/Skills.cs" Line="576" Column="41" />
+      <File FileName="Server/Skills.cs" Line="1" Column="1" />
       <File FileName="Scripts/Misc/SkillCheck.cs" Line="226" Column="10" />
-      <File FileName="Scripts/Services/BulkOrders/BulkOrderSystem.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Services/BulkOrders/Rewards/Rewards.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Mobiles/Normal/BlackSolenWarrior.cs" Line="132" Column="3" />
-      <File FileName="Scripts/Mobiles/Normal/PlateFuffaro.cs" Line="135" Column="12" />
-      <File FileName="Scripts/Mobiles/Normal/BaseCreature.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Mobiles/Normal/Drake.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Mobiles/Normal/Dragon.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Mobiles/Normal/DespiseEvilCreatures.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Skills/Mining.cs" Line="68" Column="43" />
-      <File FileName="Scripts/Services/Harvest/HarvestDefinition.cs" Line="38" Column="14" />
-      <File FileName="Scripts/Items/Equipment/Weapons/Pickaxe.cs" Line="24" Column="1" />
+      <File FileName="Scripts/Mobiles/Normal/BlackSolenWarrior.cs" Line="1" Column="1" />
+      <File FileName="Scripts/Mobiles/Normal/PlateFuffaro.cs" Line="140" Column="39" />
+      <File FileName="Scripts/Mobiles/Normal/Fuffaro.cs" Line="140" Column="59" />
+      <File FileName="Scripts/Mobiles/Normal/Vegano.cs" Line="299" Column="42" />
+      <File FileName="Scripts/Items/Equipment/Armor/BaseArmor.cs" Line="1708" Column="47" />
+      <File FileName="Scripts/Mobiles/Normal/FuffaroPelle.cs" Line="83" Column="1" />
+      <File FileName="Scripts/Misc/Loot.cs" Line="400" Column="45" />
+      <File FileName="Scripts/Misc/LootPack.cs" Line="87" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

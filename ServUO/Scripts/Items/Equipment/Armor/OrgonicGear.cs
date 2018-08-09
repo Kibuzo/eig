@@ -103,6 +103,13 @@ namespace Server.Items
 			return ArmorMaterialType.Cloth;
 		}
 	}
+		public override ArmorMeditationAllowance DefMedAllowance
+		{
+			get
+			{
+				return ArmorMeditationAllowance.Half;
+			}
+		}
 	public override void Serialize(GenericWriter writer)
 	{
 		base.Serialize(writer);
@@ -621,6 +628,7 @@ public class OrgonicBoots : BaseShoes
 		{
 			this.Weight = 1.0;
 			this.Hue = 591;
+			this.Name = "Orgonic studded gloves";
 		}
 
 		public OrgonicStuddedGloves(Serial serial)
@@ -745,6 +753,7 @@ public class OrgonicBoots : BaseShoes
 		{
 			this.Weight = 6.0;
 			this.Hue = 591;
+			this.Name = "Orgonic leather chest";
 		}
 
 		public OrgonicLeatherChest(Serial serial)
@@ -965,6 +974,7 @@ public class OrgonicBoots : BaseShoes
 		{
 			this.Weight = 1.0;
 			this.Hue = 591;
+			this.Name = "Orgonic leather gloves";
 		}
 
 		public OrgonicLeatherGloves(Serial serial)
@@ -1103,6 +1113,7 @@ public class OrgonicBoots : BaseShoes
 		{
 			this.Weight = 1.0;
 			this.Hue = 591;
+			this.Name = "Orgonic leather bustier";
 		}
 
 		public OrgonicBustier(Serial serial)

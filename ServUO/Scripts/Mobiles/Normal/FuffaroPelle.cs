@@ -78,6 +78,8 @@ namespace Server.Mobiles
 					else {
 						AddItem (new LeatherGloves());
 					}
+					AddItem (new LeatherLegs ());
+					AddItem (new LeatherGorget ());
 				}
 				else
 				{
