@@ -70,7 +70,7 @@ namespace Server.Items
         {
             get
             {
-                return 60;
+                return 75;
             }
         }
         public override int OldStrReq
@@ -87,6 +87,14 @@ namespace Server.Items
                 return -5;
             }
         }
+		public override int DexBonus
+		{
+			get
+			{
+				return -5;
+			}
+		}
+				
         public override int ArmorBase
         {
             get

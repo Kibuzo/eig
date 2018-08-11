@@ -70,7 +70,7 @@ namespace Server.Items
         {
             get
             {
-                return 60;
+                return 75;
             }
         }
         public override int OldStrReq
