@@ -71,10 +71,10 @@ namespace Server.Items
                 ((Mobile)defender).Stam -= Utility.Random(3, 3); // 3-5 points of stamina loss
         }
 
-		public override double GetBaseDamage(Mobile attacker, IDamageable defender)
+		public override double GetBaseDamage(Mobile attacker, Mobile defender)
         {
             double damage = base.GetBaseDamage(attacker);
-			damage*=(attacker.Str / ((Mobile)defender).Str);
+			damage*=(attacker.Str / (defender.Str);
 
             if (!Core.AOS && (attacker.Player || attacker.Body.IsHuman) && this.Layer == Layer.TwoHanded && (attacker.Skills[SkillName.Anatomy].Value / 400.0) >= Utility.RandomDouble())
             {
