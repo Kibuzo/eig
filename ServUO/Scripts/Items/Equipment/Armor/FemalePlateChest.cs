@@ -89,6 +89,13 @@ namespace Server.Items
                 return -5;
             }
         }
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-15);
+			}
+		}
         public override bool AllowMaleWearer
         {
             get

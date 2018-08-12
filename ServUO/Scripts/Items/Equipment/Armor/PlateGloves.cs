@@ -86,7 +86,7 @@ namespace Server.Items
 		{
 			get
 			{
-				return (-4);
+				return (-5);
 			}
 		}
         public override int OldDexBonus

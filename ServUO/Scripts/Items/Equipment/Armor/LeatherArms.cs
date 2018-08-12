@@ -96,6 +96,13 @@ namespace Server.Items
                 return ArmorMaterialType.Leather;
             }
         }
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-2);
+			}
+		}
         public override CraftResource DefaultResource
         {
             get

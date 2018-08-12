@@ -89,6 +89,13 @@ namespace Server.Items
                 return 13;
             }
         }
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-5);
+			}
+		}
         public override ArmorMaterialType MaterialType
         {
             get

@@ -81,6 +81,13 @@ namespace Server.Items
                 return 35;
             }
         }
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-8);
+			}
+		}
         public override int ArmorBase
         {
             get

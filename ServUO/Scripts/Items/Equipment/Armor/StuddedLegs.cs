@@ -101,6 +101,13 @@ namespace Server.Items
                 return CraftResource.RegularLeather;
             }
         }
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-3);
+			}
+		}
         public override ArmorMeditationAllowance DefMedAllowance
         {
             get

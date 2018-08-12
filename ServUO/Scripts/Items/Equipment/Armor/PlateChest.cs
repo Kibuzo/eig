@@ -93,7 +93,7 @@ namespace Server.Items
 		{
 			get
 			{
-				return (-10);
+				return (-15);
 			}
 		}
         public override int ArmorBase

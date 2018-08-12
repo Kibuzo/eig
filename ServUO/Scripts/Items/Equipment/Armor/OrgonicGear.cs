@@ -422,6 +422,13 @@ public class OrgonicBoots : BaseShoes
 				return 45;
 			}
 		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-8);
+			}
+		}
 		public override int AosStrReq
 		{
 			get
@@ -575,6 +582,13 @@ public class OrgonicBoots : BaseShoes
 				return 16;
 			}
 		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-8);
+			}
+		}
 		public override ArmorMaterialType MaterialType
 		{
 			get
@@ -699,6 +713,13 @@ public class OrgonicBoots : BaseShoes
 				return 25;
 			}
 		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-1);
+			}
+		}
 		public override int ArmorBase
 		{
 			get
@@ -815,6 +836,13 @@ public class OrgonicBoots : BaseShoes
 			get
 			{
 				return 25;
+			}
+		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-5);
 			}
 		}
 		public override int OldStrReq
@@ -1168,6 +1196,13 @@ public class OrgonicBoots : BaseShoes
 			get
 			{
 				return 40;
+			}
+		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-5);
 			}
 		}
 		public override int AosStrReq
