@@ -3583,7 +3583,7 @@ namespace Server.Items
 				lumberBonus = 0.0;
 			}
 //comincia parte mia
-			if (Type != (WeaponType.Piercing || WeaponType.Slashing) )
+			if (Type != (WeaponType.Piercing )
 			{
 				dexBonus= 0.0;
 			}
@@ -3595,6 +3595,7 @@ namespace Server.Items
 			if (Type==WeaponType.Slashing)
 			{
 				strengthBonus*=2.0;
+				dexBonus=2*GetBonus(attacker.Dex, 0.300, 100.0, 5.00);
 			}
 			if (Type==WeaponType.Bashing)
 			{
