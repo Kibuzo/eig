@@ -89,7 +89,7 @@ namespace Server.Items
                 return -6;
             }
         }
-		public override int DexBonus
+		public override int AosDexBonus
 		{
 			get
 			{
