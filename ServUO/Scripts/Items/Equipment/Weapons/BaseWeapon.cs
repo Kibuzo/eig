@@ -3583,7 +3583,7 @@ namespace Server.Items
 				lumberBonus = 0.0;
 			}
 //comincia parte mia
-			if (Type != (WeaponType.Piercing && WeaponType.Slashing) )
+			if (Type != (WeaponType.Piercing || WeaponType.Slashing) )
 			{
 				dexBonus= 0.0;
 			}
