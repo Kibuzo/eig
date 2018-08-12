@@ -67,9 +67,9 @@ namespace Server.Items
         {
             base.OnHit(attacker, defender, damageBonus);
 
-            if(defender is Mobile)
+			if(defender is Mobile){
                 ((Mobile)defender).Stam -= Utility.Random(3, 3); // 3-5 points of stamina loss
-			damageBonus=(attacker.Str / ((Mobile)defender).Str);
+				damageBonus=(attacker.Str / ((Mobile)defender).Str);}
         }
 
 		public override double GetBaseDamage(Mobile attacker)
@@ -84,7 +84,7 @@ namespace Server.Items
                 attacker.PlaySound(0x11C);
             }
 
-            return damage;
+			return damage*damageBonus;
         }
     }
 }
