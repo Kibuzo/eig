@@ -41,7 +41,7 @@ namespace Server.Mobiles
 				AddItem(new ShortPants(Utility.RandomNeutralHue()));
 				SetStr(86, 100);
 				SetDex(81, 95);
-				switch ( Utility.Random(7))
+				switch ( Utility.Random(5))
 				{
 				case 0:
 					AddItem(new Longsword());
@@ -94,30 +94,6 @@ namespace Server.Mobiles
 				}
 			}
 				
-			switch ( Utility.Random(7))
-			{
-			case 0:
-				AddItem(new Longsword());
-				break;
-			case 1:
-				AddItem(new Cutlass());
-				break;
-			case 2:
-				AddItem(new Broadsword());
-				break;
-			case 3:
-				AddItem(new Axe());
-				break;
-			case 4:
-				AddItem(new Club());
-				break;
-			case 5:
-				AddItem(new Dagger());
-				break;
-			case 6:
-				AddItem(new Spear());
-				break;
-			}
 
 			Utility.AssignRandomHair(this);
 		}

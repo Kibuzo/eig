@@ -21,6 +21,18 @@ namespace Server.Mobiles
 				Fem = true;
 				Body = 0x191;
 				Name = NameList.RandomName("female");
+				switch ( Utility.Random(2))
+				{
+				case 0:
+					AddItem(new ButcherKnife());
+					break;
+				case 1:
+					AddItem(new SkinningKnife());
+					break;
+				case 2:
+					AddItem(new Dagger());
+					break;
+				}
 
 				if (pelle) {
 					if (Utility.RandomDouble () > 0.9) 
@@ -62,6 +74,30 @@ namespace Server.Mobiles
 			{
 				Body = 0x190;
 				Name = NameList.RandomName("male");
+				switch ( Utility.Random(7))
+				{
+				case 0:
+					AddItem(new Longsword());
+					break;
+				case 1:
+					AddItem(new Cutlass());
+					break;
+				case 2:
+					AddItem(new Broadsword());
+					break;
+				case 3:
+					AddItem(new Axe());
+					break;
+				case 4:
+					AddItem(new Club());
+					break;
+				case 5:
+					AddItem(new QuarterStaff());
+					break;
+				case 6:
+					AddItem(new Spear());
+					break;
+				}
 
 				if (pelle){
 					if (Utility.RandomDouble () > 0.9) 
@@ -107,16 +143,16 @@ namespace Server.Mobiles
 			}
 
 			SetStr(86, 100);
-			SetDex(81, 95);
+			SetDex(71, 85);
 			SetInt(1, 5);
 			SetDamage(13, 18);
 
 			if (Fem)
 			{
-				SetStr (70,86);
+				SetStr (60,76);
 				SetDex (95,115);
 				SetInt (1,5);
-				SetDamage (18,25);
+				SetDamage (20,25);
 			}
 
 			SetSkill(SkillName.Fencing, 45.0, 65.5);
@@ -130,31 +166,6 @@ namespace Server.Mobiles
 			Karma = -2500;
 
 			AddItem(new OrgonicBoots(Utility.RandomAnimalHue()));
-
-			switch ( Utility.Random(7))
-			{
-			case 0:
-				AddItem(new Longsword());
-				break;
-			case 1:
-				AddItem(new Cutlass());
-				break;
-			case 2:
-				AddItem(new Broadsword());
-				break;
-			case 3:
-				AddItem(new Axe());
-				break;
-			case 4:
-				AddItem(new Club());
-				break;
-			case 5:
-				AddItem(new Dagger());
-				break;
-			case 6:
-				AddItem(new Spear());
-				break;
-			}
 
 			Utility.AssignRandomHair(this);
 		}
