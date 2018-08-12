@@ -3590,6 +3590,7 @@ namespace Server.Items
 			if (Type == WeaponType.Piercing)
 			{
 				strengthBonus=0.0;
+				dexBonus*=2.0
 			}
 			if (Type==WeaponType.Bashing)
 			{
