@@ -149,10 +149,10 @@ namespace Server.Mobiles
 
 			if (Fem)
 			{
-				SetStr (60,76);
+				SetStr (76,80);
 				SetDex (95,115);
 				SetInt (1,5);
-				SetDamage (20,25);
+				SetDamage (15,20);
 			}
 
 			SetSkill(SkillName.Fencing, 45.0, 65.5);
