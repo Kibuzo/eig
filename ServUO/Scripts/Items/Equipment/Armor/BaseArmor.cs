@@ -2525,7 +2525,7 @@ namespace Server.Items
 //L'ho modificato
         public virtual int OnHit(BaseWeapon weapon, int damageTaken)
         {
-			double Arperc=ArmorRating/100
+			double Arperc = ArmorRating / 100;
             double HalfAr = ArmorRating / 2.0;
             int Absorbed = (int)(HalfAr + HalfAr * Utility.RandomDouble());
 
