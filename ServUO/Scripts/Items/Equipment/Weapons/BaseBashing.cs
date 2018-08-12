@@ -74,10 +74,10 @@ namespace Server.Items
         public override double GetBaseDamage(Mobile attacker)
         {
             double damage = base.GetBaseDamage(attacker);
+			damage*=(attacker.Str / 75);
 
             if (!Core.AOS && (attacker.Player || attacker.Body.IsHuman) && this.Layer == Layer.TwoHanded && (attacker.Skills[SkillName.Anatomy].Value / 400.0) >= Utility.RandomDouble())
             {
-				damage*=(attacker.Str / 75);
                 damage *= 1.5;
 
                 attacker.SendMessage("You deliver a crushing blow!"); // Is this not localized?
