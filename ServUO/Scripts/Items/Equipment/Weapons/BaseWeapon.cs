@@ -3590,7 +3590,7 @@ namespace Server.Items
 			if (Type == WeaponType.Piercing)
 			{
 				strengthBonus=0.0;
-				dexBonus*=2.0
+				dexBonus*=2.0;
 			}
 			if (Type==WeaponType.Bashing)
 			{
@@ -3600,6 +3600,7 @@ namespace Server.Items
 			{
 				strengthBonus*=3.0;
 			}
+//finisce la parte mia
 			#endregion
 
 			#region Modifiers
