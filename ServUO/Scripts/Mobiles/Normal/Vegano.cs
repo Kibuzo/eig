@@ -39,14 +39,14 @@ namespace Server.Mobiles
 				Name = NameList.RandomName("male");
 			}
 
-			SetStr(40, 60);
+			SetStr(60, 80);
 			SetDex(30, 40);
 			SetInt(1, 5);
 			SetDamage(7, 9);
 
 			if (Fem)
 			{
-				SetStr (35,50);
+				SetStr (60,80);
 				SetDex (40,90);
 				SetInt (1,5);
 				SetHits (60 - 80);

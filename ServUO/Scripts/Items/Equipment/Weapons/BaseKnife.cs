@@ -40,7 +40,7 @@ namespace Server.Items
         {
             get
             {
-                return WeaponType.Slashing;
+                return WeaponType.Piercing;
             }
         }
         public override WeaponAnimation DefAnimation

@@ -19,16 +19,50 @@ namespace Server.Mobiles
 				Body = 0x191;
 				Name = NameList.RandomName("female");
 				AddItem(new Kilt(Utility.RandomNeutralHue()));
+				SetStr(60, 70);
+				SetDex(110, 125);
+				switch ( Utility.Random(2))
+				{
+				case 0:
+					AddItem(new Kryss());
+					break;
+				case 1:
+					AddItem(new ButcherKnife());
+					break;
+				case 2:
+					AddItem(new Dagger());
+					break;
+				}
 			}
 			else
 			{
 				Body = 0x190;
 				Name = NameList.RandomName("male");
 				AddItem(new ShortPants(Utility.RandomNeutralHue()));
+				SetStr(86, 100);
+				SetDex(81, 95);
+				switch ( Utility.Random(7))
+				{
+				case 0:
+					AddItem(new Longsword());
+					break;
+				case 1:
+					AddItem(new Cutlass());
+					break;
+				case 2:
+					AddItem(new Broadsword());
+					break;
+				case 3:
+					AddItem(new Axe());
+					break;
+				case 4:
+					AddItem(new Club());
+					break;
+				case 5:
+					AddItem(new Spear());
+					break;
+				}
 			}
-
-			SetStr(86, 100);
-			SetDex(81, 95);
 			SetInt(1, 5);
 
 			SetDamage(5, 18);
@@ -59,7 +93,7 @@ namespace Server.Mobiles
 					break;
 				}
 			}
-
+				
 			switch ( Utility.Random(7))
 			{
 			case 0:
