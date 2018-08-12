@@ -69,7 +69,7 @@ namespace Server.Items
 
             if(defender is Mobile)
                 ((Mobile)defender).Stam -= Utility.Random(3, 3); // 3-5 points of stamina loss
-			damage*=((Mobile)attacker.Str / ((Mobile)defender).Str);
+			damage*=(attacker.Str / ((Mobile)defender).Str);
         }
 
         public override double GetBaseDamage(Mobile attacker)
