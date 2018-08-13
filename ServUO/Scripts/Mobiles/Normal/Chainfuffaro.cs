@@ -30,7 +30,7 @@ namespace Server.Mobiles
 			SetStr(86, 100);
 			SetDex(81, 95);
 			SetInt(1, 5);
-			SetDamage(13, 18);
+			SetDamage(15, 20);
 			this.SetHits(120, 150);
 
 			if (Fem)
@@ -38,7 +38,7 @@ namespace Server.Mobiles
 				SetStr (70,86);
 				SetDex (95,115);
 				SetInt (1,5);
-				SetDamage (28,30);
+				SetDamage (20,25);
 				this.SetHits(100, 120);
 			}
 

@@ -20,7 +20,7 @@ namespace Server.Mobiles
 				Name = NameList.RandomName("female");
 				AddItem(new Kilt(Utility.RandomNeutralHue()));
 				SetStr(60, 70);
-				SetDex(110, 125);
+				SetDex(90, 100);
 				switch ( Utility.Random(2))
 				{
 				case 0:
@@ -39,8 +39,8 @@ namespace Server.Mobiles
 				Body = 0x190;
 				Name = NameList.RandomName("male");
 				AddItem(new ShortPants(Utility.RandomNeutralHue()));
-				SetStr(86, 100);
-				SetDex(81, 95);
+				SetStr(90, 100);
+				SetDex(60, 70);
 				switch ( Utility.Random(5))
 				{
 				case 0:

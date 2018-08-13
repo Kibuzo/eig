@@ -145,21 +145,21 @@ namespace Server.Mobiles
 			SetStr(86, 100);
 			SetDex(71, 85);
 			SetInt(1, 5);
-			SetDamage(13, 18);
+			SetDamage(10, 15);
 
 			if (Fem)
 			{
 				SetStr (76,80);
 				SetDex (95,115);
 				SetInt (1,5);
-				SetDamage (15,20);
+				SetDamage (12,18);
 			}
 
 			SetSkill(SkillName.Fencing, 45.0, 65.5);
 			SetSkill(SkillName.Macing, 45.0, 65.5);
 			SetSkill(SkillName.MagicResist, 15.0, 27.5);
 			SetSkill(SkillName.Swords, 45.0, 65.5);
-			SetSkill(SkillName.Tactics, 45.0, 65.5);
+			SetSkill(SkillName.Tactics, 45.0, 50.5);
 			SetSkill(SkillName.Wrestling, 25.0, 47.5);
 
 			Fame = 2500;
