@@ -146,7 +146,7 @@ namespace Server
 			typeof(OrgonicBoots), typeof(OrgonicKilt), typeof(OrgonicStuddedChest), typeof(OrgonicFemaleStuddedChest), typeof(OrgonicShirt),
 			typeof(StuddedBustierArms), typeof(StuddedChest), typeof(StuddedGloves), typeof(StuddedGorget), typeof(StuddedLegs),
 			typeof(OrgonicBustier), typeof(OrgonicLeatherChest), typeof(OrgonicLeatherGloves), typeof (OrgonicChainChest),
-			typeof(OrgonicChainLegs), typeof(OrgonicChainCoif), typeof(OrgonicRingmailLegs)
+			typeof(OrgonicChainLegs), typeof(OrgonicChainCoif), typeof(OrgonicRingmailLegs), typeof(OrgonicPlateChest)
 		};
 
         public static Type[] ArmorTypes { get { return m_ArmorTypes; } }

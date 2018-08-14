@@ -1746,7 +1746,7 @@ public class OrgonicBoots : BaseShoes
 		{
 			this.Weight = 10.0;
 			this.Hue = 591;
-			this.OwnerName = "Orgonic platemail chest";
+			this.Name = "Orgonic platemail chest";
 		}
 
 		public PlateChest(Serial serial)

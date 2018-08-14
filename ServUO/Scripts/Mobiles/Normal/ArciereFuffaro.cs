@@ -4,7 +4,7 @@ using Server.Items;
 namespace Server.Mobiles
 {
 	[TypeAlias("Server.Mobiles.ChainFuffaro")]
-	public class Ringfurffaro : BaseCreature
+	public class Ringfuffaro : BaseCreature
 	{
 		[Constructable]
 		public Ringfuffaro()
@@ -109,7 +109,7 @@ namespace Server.Mobiles
 			Utility.AssignRandomHair(this);
 		}
 
-		public ChainFuffaro(Serial serial)
+		public Ringfuffaro(Serial serial)
 			: base(serial)
 		{
 		}
@@ -154,7 +154,7 @@ namespace Server.Mobiles
 			if (Utility.RandomDouble > 0.95) {
 				AddLoot (LootPack.AosMagicItemsPoor);
 			}
-			else if Utility.RandomDouble > 0.95) {
+			else if (Utility.RandomDouble > 0.95) {
 				AddLoot (LootPack.AosMagicItemsAverageType1);
 			}
 		}
