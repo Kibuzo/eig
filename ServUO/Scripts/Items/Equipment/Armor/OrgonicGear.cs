@@ -1266,4 +1266,598 @@ public class OrgonicBoots : BaseShoes
 			int version = reader.ReadInt();
 		}
 	}
+// Chain legs
+	[FlipableAttribute(0x13be, 0x13c3)]
+	public class OrgonicChainLegs : BaseArmor
+	{
+		[Constructable]
+		public OrgonicChainLegs()
+			: base(0x13BE)
+		{
+			this.Weight = 7.0;
+			this.Name = "Orgonic chainmail leggins";
+			this.Hue= 591;
+		}
+
+		public OrgonicChainLegs(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override int BasePhysicalResistance
+		{
+			get
+			{
+				return 7;
+			}
+		}
+		public override int BaseFireResistance
+		{
+			get
+			{
+				return 4;
+			}
+		}
+		public override int BaseColdResistance
+		{
+			get
+			{
+				return 4;
+			}
+		}
+		public override int BasePoisonResistance
+		{
+			get
+			{
+				return 1;
+			}
+		}
+		public override int BaseEnergyResistance
+		{
+			get
+			{
+				return 5;
+			}
+		}
+		public override int InitMinHits
+		{
+			get
+			{
+				return 45;
+			}
+		}
+		public override int InitMaxHits
+		{
+			get
+			{
+				return 60;
+			}
+		}
+		public override int AosStrReq
+		{
+			get
+			{
+				return 75;
+			}
+		}
+		public override int OldStrReq
+		{
+			get
+			{
+				return 20;
+			}
+		}
+		public override int OldDexBonus
+		{
+			get
+			{
+				return -3;
+			}
+		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return -8;
+			}
+		}
+		public override int ArmorBase
+		{
+			get
+			{
+				return 28;
+			}
+		}
+		public override ArmorMaterialType MaterialType
+		{
+			get
+			{
+				return ArmorMaterialType.Chainmail;
+			}
+		}
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+		}
+	}
+// chainmail tunic
+	[FlipableAttribute(0x13bf, 0x13c4)]
+	public class OrgonicChainChest : BaseArmor
+	{
+		[Constructable]
+		public OrgonicChainChest()
+			: base(0x13BF)
+		{
+			this.Weight = 7.0;
+			this.Name = "Orgonic chainmail tunic";
+			this.Hue = 591;
+		}
+
+		public OrgonicChainChest(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override int BasePhysicalResistance
+		{
+			get
+			{
+				return 9;
+			}
+		}
+		public override int BaseFireResistance
+		{
+			get
+			{
+				return 4;
+			}
+		}
+		public override int BaseColdResistance
+		{
+			get
+			{
+				return 4;
+			}
+		}
+		public override int BasePoisonResistance
+		{
+			get
+			{
+				return 1;
+			}
+		}
+		public override int BaseEnergyResistance
+		{
+			get
+			{
+				return 5;
+			}
+		}
+		public override int InitMinHits
+		{
+			get
+			{
+				return 45;
+			}
+		}
+		public override int InitMaxHits
+		{
+			get
+			{
+				return 60;
+			}
+		}
+		public override int AosStrReq
+		{
+			get
+			{
+				return 75;
+			}
+		}
+		public override int OldStrReq
+		{
+			get
+			{
+				return 20;
+			}
+		}
+		public override int OldDexBonus
+		{
+			get
+			{
+				return -5;
+			}
+		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return -12;
+			}
+		}
+
+		public override int ArmorBase
+		{
+			get
+			{
+				return 28;
+			}
+		}
+		public override ArmorMaterialType MaterialType
+		{
+			get
+			{
+				return ArmorMaterialType.Chainmail;
+			}
+		}
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+		}
+	}
+// Orgonic coif 
+	[FlipableAttribute(0x13BB, 0x13C0)]
+	public class OrgonicChainCoif : BaseArmor
+	{
+		[Constructable]
+		public OrgonicChainCoif()
+			: base(0x13BB)
+		{
+			this.Weight = 1.0;
+			this.Hue = 591;
+			this.Name = "Orgonic chainmail coif";
+		}
+
+		public OrgonicChainCoif(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override int BasePhysicalResistance
+		{
+			get
+			{
+				return 6;
+			}
+		}
+		public override int BaseFireResistance
+		{
+			get
+			{
+				return 4;
+			}
+		}
+		public override int BaseColdResistance
+		{
+			get
+			{
+				return 4;
+			}
+		}
+		public override int BasePoisonResistance
+		{
+			get
+			{
+				return 1;
+			}
+		}
+		public override int BaseEnergyResistance
+		{
+			get
+			{
+				return 5;
+			}
+		}
+		public override int InitMinHits
+		{
+			get
+			{
+				return 35;
+			}
+		}
+		public override int InitMaxHits
+		{
+			get
+			{
+				return 60;
+			}
+		}
+		public override int AosStrReq
+		{
+			get
+			{
+				return 75;
+			}
+		}
+		public override int OldStrReq
+		{
+			get
+			{
+				return 20;
+			}
+		}
+		public override int ArmorBase
+		{
+			get
+			{
+				return 28;
+			}
+		}
+		public override ArmorMaterialType MaterialType
+		{
+			get
+			{
+				return ArmorMaterialType.Chainmail;
+			}
+		}
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+		}
+	}
+//Orgonic ringmail legs
+	[FlipableAttribute(0x13f0, 0x13f1)]
+	public class OrgonicRingmailLegs : BaseArmor
+	{
+		[Constructable]
+		public OrgonicRingmailLegs()
+			: base(0x13F0)
+		{
+			this.Weight = 15.0;
+			this.Hue = 591;
+			this.Name = "Orgonic ringmail legs";
+		}
+
+		public OrgonicRingmailLegs(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override int BasePhysicalResistance
+		{
+			get
+			{
+				return 6;
+			}
+		}
+		public override int BaseFireResistance
+		{
+			get
+			{
+				return 3;
+			}
+		}
+		public override int BaseColdResistance
+		{
+			get
+			{
+				return 1;
+			}
+		}
+		public override int BasePoisonResistance
+		{
+			get
+			{
+				return 5;
+			}
+		}
+		public override int BaseEnergyResistance
+		{
+			get
+			{
+				return 5;
+			}
+		}
+		public override int InitMinHits
+		{
+			get
+			{
+				return 40;
+			}
+		}
+		public override int InitMaxHits
+		{
+			get
+			{
+				return 50;
+			}
+		}
+		public override int AosStrReq
+		{
+			get
+			{
+				return 60;
+			}
+		}
+		public override int OldStrReq
+		{
+			get
+			{
+				return 20;
+			}
+		}
+		public override int OldDexBonus
+		{
+			get
+			{
+				return -1;
+			}
+		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-5);
+			}
+		}
+		public override int ArmorBase
+		{
+			get
+			{
+				return 22;
+			}
+		}
+		public override ArmorMaterialType MaterialType
+		{
+			get
+			{
+				return ArmorMaterialType.Ringmail;
+			}
+		}
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+		}
+	}
+	[FlipableAttribute(0x1415, 0x1416)]
+	public class OrgonicPlateChest : BaseArmor
+	{
+		[Constructable]
+		public OrgonicPlateChest()
+			: base(0x1415)
+		{
+			this.Weight = 10.0;
+			this.Hue = 591;
+			this.OwnerName = "Orgonic platemail chest";
+		}
+
+		public PlateChest(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override int BasePhysicalResistance
+		{
+			get
+			{
+				return 10;
+			}
+		}
+		public override int BaseFireResistance
+		{
+			get
+			{
+				return 3;
+			}
+		}
+		public override int BaseColdResistance
+		{
+			get
+			{
+				return 2;
+			}
+		}
+		public override int BasePoisonResistance
+		{
+			get
+			{
+				return 3;
+			}
+		}
+		public override int BaseEnergyResistance
+		{
+			get
+			{
+				return 5;
+			}
+		}
+		public override int InitMinHits
+		{
+			get
+			{
+				return 50;
+			}
+		}
+		public override int InitMaxHits
+		{
+			get
+			{
+				return 65;
+			}
+		}
+		public override int AosStrReq
+		{
+			get
+			{
+				return 105;
+			}
+		}
+		public override int OldStrReq
+		{
+			get
+			{
+				return 60;
+			}
+		}
+		public override int OldDexBonus
+		{
+			get
+			{
+				return -8;
+			}
+		}
+		public override int AosDexBonus
+		{
+			get
+			{
+				return (-15);
+			}
+		}
+		public override int ArmorBase
+		{
+			get
+			{
+				return 40;
+			}
+		}
+		public override ArmorMaterialType MaterialType
+		{
+			get
+			{
+				return ArmorMaterialType.Plate;
+			}
+		}
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+
+			if (this.Weight == 1.0)
+				this.Weight = 10.0;
+		}
+	}
 }

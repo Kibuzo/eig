@@ -145,7 +145,8 @@ namespace Server
 			typeof(RingmailGloves), typeof(RingmailLegs), typeof(FemaleStuddedChest), typeof(StuddedArms),
 			typeof(OrgonicBoots), typeof(OrgonicKilt), typeof(OrgonicStuddedChest), typeof(OrgonicFemaleStuddedChest), typeof(OrgonicShirt),
 			typeof(StuddedBustierArms), typeof(StuddedChest), typeof(StuddedGloves), typeof(StuddedGorget), typeof(StuddedLegs),
-			typeof(OrgonicBustier), typeof(OrgonicLeatherChest), typeof(OrgonicLeatherGloves)
+			typeof(OrgonicBustier), typeof(OrgonicLeatherChest), typeof(OrgonicLeatherGloves), typeof (OrgonicChainChest),
+			typeof(OrgonicChainLegs), typeof(OrgonicChainCoif), typeof(OrgonicRingmailLegs)
 		};
 
         public static Type[] ArmorTypes { get { return m_ArmorTypes; } }
@@ -380,7 +381,7 @@ namespace Server
 			typeof(WizardsHat), typeof(BodySash), typeof(Doublet), typeof(Boots), typeof(FullApron), typeof(JesterSuit),
 			typeof(Sandals), typeof(Tunic), typeof(Shoes), typeof(Shirt), typeof(Kilt), typeof(Skirt), typeof(FancyShirt),
 			typeof(FancyDress), typeof(ThighBoots), typeof(LongPants), typeof(PlainDress), typeof(Robe), typeof(ShortPants),
-			typeof(HalfApron), typeof(OrgonicKilt)
+			typeof(HalfApron), typeof(OrgonicKilt), typeof(OrgonicShirt)
 		};
 
         public static Type[] ClothingTypes { get { return m_ClothingTypes; } }
@@ -400,7 +401,7 @@ namespace Server
 		{
 			typeof(SkullCap), typeof(Bandana), typeof(FloppyHat), typeof(Cap), typeof(WideBrimHat), typeof(StrawHat),
 			typeof(TallStrawHat), typeof(WizardsHat), typeof(Bonnet), typeof(FeatheredHat), typeof(TricorneHat),
-			typeof(JesterHat), typeof(OrcMask), typeof(TribalMask), typeof(OrgonicKilt)
+			typeof(JesterHat), typeof(OrcMask), typeof(TribalMask), typeof(OrgonicKilt), typeof(OrgonicShirt)
 		};
 
         public static Type[] HatTypes { get { return m_HatTypes; } }

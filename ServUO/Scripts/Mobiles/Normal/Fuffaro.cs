@@ -155,7 +155,13 @@ namespace Server.Mobiles
 
 		public override void GenerateLoot()
 		{
-			AddLoot(LootPack.Average);
+			AddLoot(LootPack.Poor);
+			if (Utility.RandomDouble > 0.95) {
+				AddLoot (LootPack.AosMagicItemsPoor);
+			}
+			else if Utility.RandomDouble > 0.95) {
+				AddLoot (LootPack.AosMagicItemsAverageType1);
+			}
 		}
 
 		public override void OnGaveMeleeAttack( Mobile defender )
