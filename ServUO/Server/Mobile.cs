@@ -884,7 +884,7 @@ namespace Server
 
 		public int[] Resistances { get { return m_Resistances; } }
 
-		public virtual int BasePhysicalResistance { get { return 0; } }
+		public virtual int BasePhysicalResistance { get { return 19; } }
 		public virtual int BaseFireResistance { get { return 0; } }
 		public virtual int BaseColdResistance { get { return 0; } }
 		public virtual int BasePoisonResistance { get { return 0; } }
@@ -1024,7 +1024,7 @@ namespace Server
 			}
 //aggiunta riga successiva (kibuzo)
 			//m_Resistances[0] += (int)((RawStr-90.0)/3.0);
-			public override int BasePhysicalResistance { get { return (int)((RawStr-90.0)/3.0); } }
+			//public override int BasePhysicalResistance { get { return (int)((RawStr-90.0)/3.0); } }
 			m_Resistances[0] += BasePhysicalResistance;
 			m_Resistances[1] += BaseFireResistance;
 			m_Resistances[2] += BaseColdResistance;
