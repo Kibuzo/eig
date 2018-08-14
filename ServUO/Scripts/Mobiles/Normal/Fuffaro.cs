@@ -157,10 +157,7 @@ namespace Server.Mobiles
 		{
 			AddLoot(LootPack.Poor);
 			if (Utility.RandomDouble() > 0.95) {
-				AddLoot (LootPack.AosMagicItemsPoor);
-			}
-			else if (Utility.RandomDouble ()> 0.95) {
-				AddLoot (LootPack.AosMagicItemsAverageType1);
+				AddLoot (LootPack.Average);
 			}
 		}
 

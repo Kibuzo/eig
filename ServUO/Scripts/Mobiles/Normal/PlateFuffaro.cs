@@ -20,7 +20,7 @@ namespace Server.Mobiles
 				Fem = true;
 				Body = 0x191;
 				Name = NameList.RandomName("female");
-				if (Utility.RandomDouble < 0.1) {
+				if (Utility.RandomDouble () < 0.1) {
 					AddItem (new FemalePlateChest ());
 				} 
 				else {
@@ -31,7 +31,7 @@ namespace Server.Mobiles
 			{
 				Body = 0x190;
 				Name = NameList.RandomName("male");
-				if (Utility.RandomDouble < 0.1) {
+				if (Utility.RandomDouble () < 0.1) {
 					AddItem (new PlateChest ());
 				} 
 				else {
