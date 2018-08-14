@@ -1749,7 +1749,7 @@ public class OrgonicBoots : BaseShoes
 			this.Name = "Orgonic platemail chest";
 		}
 
-		public PlateChest(Serial serial)
+		public OrgonicPlateChest(Serial serial)
 			: base(serial)
 		{
 		}
