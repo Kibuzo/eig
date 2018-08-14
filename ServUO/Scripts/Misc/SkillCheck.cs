@@ -455,7 +455,8 @@ namespace Server.Misc
 					GainStat(from, (Stat)info.Secondary);
 				else
 					GainStat(from, (Stat)info.Primary);
-				from.BasePhysicalResistance=(int)((RawStr-90.0)/3.0));
+				
+				from.BasePhysicalResistance=(int)((RawStr-90.0)/3.0);
 			}
 			else // Will not do anything if neither are selected to gain
 			{
