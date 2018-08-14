@@ -1004,8 +1004,8 @@ namespace Server
 		private static int m_MinPlayerResistance = -70;
 
 		public static int MinPlayerResistance { get { return m_MinPlayerResistance; } set { m_MinPlayerResistance = value; } }
-
-		private static int m_MaxPlayerResistance = 70;
+//modificata riga successiva (kibuzo)
+		private static int m_MaxPlayerResistance = 70
 
 		public static int MaxPlayerResistance { get { return m_MaxPlayerResistance; } set { m_MaxPlayerResistance = value; } }
 
@@ -1020,8 +1020,8 @@ namespace Server
 			{
 				m_Resistances[i] = 0;
 			}
-//aggiunta riga successiva
-			m_Resistances[0] += (int)((RawStr-90)/3);
+//aggiunta riga successiva (kibuzo)
+			m_Resistances[0] += 5+(int)((RawStr-90.0)/3.0);
 			m_Resistances[0] += BasePhysicalResistance;
 			m_Resistances[1] += BaseFireResistance;
 			m_Resistances[2] += BaseColdResistance;
