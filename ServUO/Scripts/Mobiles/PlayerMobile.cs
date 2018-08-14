@@ -1041,7 +1041,7 @@ namespace Server.Mobiles
                 Resistances[i] = 0;
             }
 
-			Resistances[0] += BasePhysicalResistance+(int)((RawStr-90.0)/3.0);
+			Resistances[0] += BasePhysicalResistance+(int)((RawStr-100.0)/2.0);
             Resistances[1] += BaseFireResistance;
             Resistances[2] += BaseColdResistance;
             Resistances[3] += BasePoisonResistance;
@@ -1078,8 +1078,9 @@ namespace Server.Mobiles
 
             for (int i = 0; i < Resistances.Length; ++i)
             {
-                int min = GetMinResistance((ResistanceType)i);
-                int max = GetMaxResistance((ResistanceType)i);
+				//Ho modificato qui (Kibuzo)
+				int min = GetMinResistance((ResistanceType)i)-(int)((RawStr-100.0)/2.0);
+				int max = (int)((RawStr-100.0)/2.0)+GetMaxResistance((ResistanceType)i);
 
                 if (max < min)
                 {
