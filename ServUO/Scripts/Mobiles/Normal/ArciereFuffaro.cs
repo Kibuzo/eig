@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		{
 			bool Fem=false;
 			SpeechHue = 18;
-			Title = "the flat-earther";
+			Title = "the No-vaxx";
 			Hue = Utility.RandomSkinHue();
 
 			if (Female = Utility.RandomBool())
@@ -81,28 +81,16 @@ namespace Server.Mobiles
 				}
 			}
 
-			switch ( Utility.Random(7))
+			switch ( Utility.Random(2))
 			{
 			case 0:
-				AddItem(new Bardiche());
+				AddItem(new Crossbow());
 				break;
 			case 1:
-				AddItem(new Halberd());
+				AddItem(new HeavyCrossbow());
 				break;
 			case 2:
-				AddItem(new Broadsword());
-				break;
-			case 3:
-				AddItem(new TwoHandedAxe());
-				break;
-			case 4:
-				AddItem(new QuarterStaff());
-				break;
-			case 5:
-				AddItem(new Spear());
-				break;
-			case 6:
-				AddItem(new WarFork());
+				AddItem(new Bow());
 				break;
 			}
 
