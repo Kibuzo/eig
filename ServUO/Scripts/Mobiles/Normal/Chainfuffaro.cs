@@ -53,7 +53,7 @@ namespace Server.Mobiles
 			Karma = -6500;
 
 			AddItem(new OrgonicBoots(Utility.RandomAnimalHue()));
-			if (Utility.RandomDouble>0.9)
+			if (Utility.RandomDouble()>0.9)
 			{
 				AddItem(new OrgonicChainCoif());
 			}
@@ -61,7 +61,7 @@ namespace Server.Mobiles
 			{
 			AddItem(new ChainCoif());
 			}
-			if (Utility.RandomDouble>0.9)
+			if (Utility.RandomDouble()>0.9)
 			{
 				AddItem(new OrgonicChainLegs());
 			}
@@ -69,7 +69,7 @@ namespace Server.Mobiles
 			{
 				AddItem(new ChainLegs());
 			}
-			if (Utility.RandomDouble>0.9)
+			if (Utility.RandomDouble()>0.9)
 			{
 				AddItem(new OrgonicChainChest());
 			}

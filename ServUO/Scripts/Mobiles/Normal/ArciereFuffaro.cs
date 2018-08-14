@@ -54,7 +54,7 @@ namespace Server.Mobiles
 			Karma = -6500;
 
 			AddItem(new OrgonicBoots(Utility.RandomAnimalHue()));
-			if (Utility.RandomDouble>0.9)
+			if (Utility.RandomDouble()>0.9)
 			{
 				AddItem(new OrgonicStuddedGloves());
 			}
@@ -62,7 +62,7 @@ namespace Server.Mobiles
 			{
 				AddItem(new RingmailGloves());
 			}
-			if (Utility.RandomDouble>0.9)
+			if (Utility.RandomDouble()>0.9)
 			{
 				AddItem(new OrgonicRingmailLegs());
 			}
@@ -70,8 +70,8 @@ namespace Server.Mobiles
 			{
 				AddItem(new RingmailLegs());
 			}
-			if (fem){
-				if (Utility.RandomDouble>0.9)
+			if (Fem){
+				if (Utility.RandomDouble()>0.9)
 				{
 					AddItem(new OrgonicChainChest());
 				}
@@ -151,10 +151,10 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.Average);
-			if (Utility.RandomDouble > 0.95) {
+			if (Utility.RandomDouble ()> 0.95) {
 				AddLoot (LootPack.AosMagicItemsPoor);
 			}
-			else if (Utility.RandomDouble > 0.95) {
+			else if (Utility.RandomDouble ()> 0.95) {
 				AddLoot (LootPack.AosMagicItemsAverageType1);
 			}
 		}

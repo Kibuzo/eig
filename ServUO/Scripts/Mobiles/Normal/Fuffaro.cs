@@ -156,10 +156,10 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.Poor);
-			if (Utility.RandomDouble > 0.95) {
+			if (Utility.RandomDouble() > 0.95) {
 				AddLoot (LootPack.AosMagicItemsPoor);
 			}
-			else if (Utility.RandomDouble > 0.95) {
+			else if (Utility.RandomDouble ()> 0.95) {
 				AddLoot (LootPack.AosMagicItemsAverageType1);
 			}
 		}
