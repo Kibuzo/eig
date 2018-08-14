@@ -1041,7 +1041,7 @@ namespace Server.Mobiles
                 Resistances[i] = 0;
             }
 
-            Resistances[0] += BasePhysicalResistance;
+			Resistances[0] += BasePhysicalResistance+(int)((RawStr-90.0)/3.0);
             Resistances[1] += BaseFireResistance;
             Resistances[2] += BaseColdResistance;
             Resistances[3] += BasePoisonResistance;

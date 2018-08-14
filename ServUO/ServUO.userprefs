@@ -1,18 +1,23 @@
 ﻿<Properties StartupItem="Server/Server.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Scripts/Items/Equipment/Weapons/BaseBashing.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Mobile.cs">
     <Files>
-      <File FileName="Server/Skills.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Misc/SkillCheck.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Mobiles/Normal/BlackSolenWarrior.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Mobiles/Normal/PlateFuffaro.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Mobiles/Normal/Fuffaro.cs" Line="1" Column="1" />
+      <File FileName="Server/Skills.cs" Line="1072" Column="5" />
+      <File FileName="Scripts/Misc/SkillCheck.cs" Line="459" Column="1" />
+      <File FileName="Scripts/Mobiles/Normal/PlateFuffaro.cs" Line="34" Column="32" />
+      <File FileName="Scripts/Mobiles/Normal/Fuffaro.cs" Line="160" Column="30" />
       <File FileName="Scripts/Mobiles/Normal/Vegano.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Items/Equipment/Armor/BaseArmor.cs" Line="1" Column="1" />
-      <File FileName="Scripts/Mobiles/Normal/FuffaroPelle.cs" Line="83" Column="1" />
-      <File FileName="Scripts/Misc/Loot.cs" Line="1" Column="1" />
+      <File FileName="Scripts/Items/Equipment/Armor/BaseArmor.cs" Line="986" Column="50" />
+      <File FileName="Scripts/Mobiles/Normal/FuffaroPelle.cs" Line="220" Column="12" />
+      <File FileName="Scripts/Misc/Loot.cs" Line="149" Column="110" />
       <File FileName="Scripts/Misc/LootPack.cs" Line="1" Column="1" />
       <File FileName="Scripts/Items/Equipment/Weapons/BaseBashing.cs" Line="72" Column="13" />
+      <File FileName="Scripts/Items/Equipment/Armor/OrgonicGear.cs" Line="1752" Column="25" />
+      <File FileName="Scripts/Mobiles/Normal/Chainfuffaro.cs" Line="72" Column="30" />
+      <File FileName="Server/Mobile.cs" Line="1010" Column="48" />
+      <File FileName="Scripts/Items/Equipment/Weapons/BaseWeapon.cs" Line="3618" Column="15" />
+      <File FileName="Scripts/Services/Ethics/Core/Player.cs" Line="41" Column="64" />
+      <File FileName="Scripts/Items/Equipment/Armor/FemaleGargishLeatherKilt.cs" Line="28" Column="73" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
