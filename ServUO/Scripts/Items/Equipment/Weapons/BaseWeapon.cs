@@ -3600,6 +3600,10 @@ namespace Server.Items
 			{
 				strengthBonus*=3.0;
 			}
+			if (Type==WeaponType.Staff)
+			{
+				strengthBonus*=3.0;
+			}
 			if (Type == WeaponType.Fists)
 			{
 				strengthBonus*=4.0;

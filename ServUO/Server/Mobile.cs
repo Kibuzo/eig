@@ -1020,7 +1020,8 @@ namespace Server
 			{
 				m_Resistances[i] = 0;
 			}
-
+//aggiunta riga successiva
+			m_Resistances[0] += (m_Str-90)/3
 			m_Resistances[0] += BasePhysicalResistance;
 			m_Resistances[1] += BaseFireResistance;
 			m_Resistances[2] += BaseColdResistance;

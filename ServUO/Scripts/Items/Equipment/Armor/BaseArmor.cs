@@ -10,6 +10,8 @@ using AMA = Server.Items.ArmorMeditationAllowance;
 using AMT = Server.Items.ArmorMaterialType;
 using System.Linq;
 
+//edit miei a riga ~2530 sugli armor rating
+
 namespace Server.Items
 {
     public abstract class BaseArmor : Item, IScissorable, IFactionItem, ICraftable, IWearableDurability, IResource, ISetItem, IVvVItem, IOwnerRestricted, ITalismanProtection, IEngravable

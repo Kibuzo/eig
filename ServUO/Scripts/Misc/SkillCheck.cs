@@ -484,7 +484,7 @@ namespace Server.Misc
         {
             if (!(from is BaseCreature && ((BaseCreature)from).Controlled))
             {
-                if (from.RawStatTotal >= from.StatCap)
+				if (from.RawStatTotal >= 260)//from.StatCap)
                     return false;
             }
 
