@@ -5,7 +5,7 @@ namespace Server.Items
 {
     [Alterable(typeof(DefBlacksmithy), typeof(GargishKryss))]
     [FlipableAttribute(0x1401, 0x1400)]
-    public class Kryss : BaseKnife
+    public class Kryss : BaseSpear
     {
         [Constructable]
         public Kryss()

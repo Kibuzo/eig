@@ -5,7 +5,7 @@ namespace Server.Items
 {
     [Alterable(typeof(DefBlacksmithy), typeof(GargishWarFork))]
     [FlipableAttribute(0x1405, 0x1404)]
-    public class WarFork : BaseKnife
+    public class WarFork : BaseSpear
     {
         [Constructable]
         public WarFork()
