@@ -3593,8 +3593,8 @@ namespace Server.Items
 			}
 			if (Type==WeaponType.Slashing)
 			{
-				strengthBonus*=2.0;
-				dexBonus=GetBonus(attacker.Dex, 0.300, 100.0, 5.00);
+				strengthBonus*=3.0;
+				dexBonus=0.0;
 			}
 			if (Type==WeaponType.Bashing)
 			{

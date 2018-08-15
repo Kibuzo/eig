@@ -10,19 +10,19 @@ SkillCap=1000
 
 # Sets the default total skill cap. Since skills have a decimal value
 # they also need to have a decimal value added to their skillcap
-TotalSkillCap=7000
+TotalSkillCap=10000
 
 # The total stat cap
 TotalStatCap=225
 
 # The individual str cap
-StrCap=125
+StrCap=135
 
 # The individual dex cap
-DexCap=125
+DexCap=135
 
 # The individual int cap
-IntCap=125
+IntCap=135
 
 # The individual enhanced str cap for players
 StrMaxCap=150
