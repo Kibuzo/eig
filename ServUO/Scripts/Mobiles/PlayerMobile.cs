@@ -1996,7 +1996,9 @@ namespace Server.Mobiles
 				}
 				else
 				{
-					strBase = RawStr;
+	//Ho aggiunto io questa riga (Kibuzo)
+					if (Race==Race.Elf) strBase=RawStr-10;
+					else strBase = RawStr;
 				}
 
 				return (strBase / 2) + 50 + strOffs;

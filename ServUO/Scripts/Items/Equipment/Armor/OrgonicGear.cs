@@ -377,7 +377,7 @@ public class OrgonicBoots : BaseShoes
 		{
 			get
 			{
-				return (Utility.Random(2)+6);
+				return (6);
 			}
 		}
 		public override int BaseFireResistance
@@ -516,7 +516,7 @@ public class OrgonicBoots : BaseShoes
 		{
 			get
 			{
-				return (Utility.Random(2)+6);
+				return (6);
 			}
 		}
 		public override int BaseFireResistance
