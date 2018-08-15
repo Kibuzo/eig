@@ -1035,13 +1035,14 @@ namespace Server.Mobiles
         public override void ComputeResistances()
         {
             base.ComputeResistances();
-
-            for (int i = 0; i < Resistances.Length; ++i)
+			// Questa parte l'ho aggiunta io (Kibuzo)
+			Resistances[0] = (int)((RawStr-100.0)/2.0); //era in resistances[0]+=
+            for (int i = 1; i < Resistances.Length; ++i)
             {
                 Resistances[i] = 0;
             }
 
-			Resistances[0] += BasePhysicalResistance+(int)((RawStr-100.0)/2.0);
+			Resistances[0] += BasePhysicalResistance;
             Resistances[1] += BaseFireResistance;
             Resistances[2] += BaseColdResistance;
             Resistances[3] += BasePoisonResistance;

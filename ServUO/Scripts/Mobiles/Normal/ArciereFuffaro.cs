@@ -62,25 +62,20 @@ namespace Server.Mobiles
 			{
 				AddItem(new RingmailGloves());
 			}
-			if (Utility.RandomDouble()>0.9)
-			{
-				AddItem(new OrgonicRingmailLegs());
-			}
-			else
-			{
-				AddItem(new RingmailLegs());
-			}
-			if (Fem){
-				if (Utility.RandomDouble()>0.9)
-				{
-					AddItem(new OrgonicChainChest());
-				}
-				else
-				{
-					AddItem(new RingmailChest());
-				}
-			}
 
+			if (Fem) {
+				if (Utility.RandomDouble () > 0.9) {
+					AddItem (new OrgonicChainChest ());
+				} else {
+					AddItem (new RingmailChest ());
+				}
+			} else {
+				if (Utility.RandomDouble () > 0.9) {
+					AddItem (new OrgonicRingmailLegs ());
+				} else {
+					AddItem (new RingmailLegs ());
+				}
+			}
 			switch ( Utility.Random(2))
 			{
 			case 0:

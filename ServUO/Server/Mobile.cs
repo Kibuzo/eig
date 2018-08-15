@@ -1018,12 +1018,13 @@ namespace Server
 				m_Resistances = new int[5] {int.MinValue, int.MinValue, int.MinValue, int.MinValue, int.MinValue};
 			}
 
-			for (int i = 0; i < m_Resistances.Length; ++i)
+			//aggiunta riga successiva (kibuzo)
+			m_Resistances[0] = (int)((RawStr-100.0)/2.0);
+			for (int i = 1; i < m_Resistances.Length; ++i)
 			{
+				
 				m_Resistances[i] = 0;
 			}
-//aggiunta riga successiva (kibuzo)
-			m_Resistances[0] += (int)((RawStr-100.0)/2.0);
 			//public override int BasePhysicalResistance { get { return (int)((RawStr-90.0)/3.0); } }
 			m_Resistances[0] += BasePhysicalResistance;
 			m_Resistances[1] += BaseFireResistance;
