@@ -12,16 +12,6 @@ namespace Server.Mobiles
 			: base(m)
 		{
 		}
-
-		public Mobile GetCombatant (Mobile m)
-		{
-			Mobile combatant = m.Combatant as Mobile;
-			if (combatant != null) 
-			{
-				return combatant;
-			}
-			return null;
-		}
 			
 		public override bool DoActionWander()
 		{
@@ -30,9 +20,9 @@ namespace Server.Mobiles
 			if (AcquireFocusMob(m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true))
 			{
 				m_Mobile.DebugSay("I have detected {0}, attacking", m_Mobile.FocusMob.Name);
-				//Mobile mob = GetCombatant(m_Mobile);
-				//m_Mobile.Say("Well, hello there", m_Mobile.FocusMob.)
-					Action = ActionType.Combat;
+
+				m_Mobile.Combatant = m_Mobile.FocusMob;
+				Action = ActionType.Combat;
 			}
 			else
 			{
