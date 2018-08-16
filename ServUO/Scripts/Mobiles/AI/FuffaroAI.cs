@@ -15,7 +15,7 @@ namespace Server.Mobiles
 
 		public Mobile GetCombatant (Mobile m)
 		{
-			Mobile combatant = m.Combatant as Mobile;
+			Mobile combatant = m.Target as Mobile;
 			if (combatant != null) 
 			{
 				return combatant;
@@ -31,7 +31,7 @@ namespace Server.Mobiles
 			if (AcquireFocusMob(m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true))
 			{
 				m_Mobile.DebugSay("I have detected {0}, attacking", m_Mobile.FocusMob.Name);
-				Mobile mob = GetCombatant(m_Mobile.Target);
+				Mobile mob = GetCombatant(m_Mobile);
 				if (mob.Fame >= 100) {
 					Action = ActionType.Flee;
 					m_Mobile.Say ("Flee!");
