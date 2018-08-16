@@ -79,11 +79,11 @@ namespace Server.Mobiles
 				}
 			}
 
-			if (MoveTo(c, true, m_Mobile.RangeFight))
+			if ((MoveTo(c, true, m_Mobile.RangeFight)) && fama==0)
 			{
 				m_Mobile.Direction = m_Mobile.GetDirectionTo(c);
 			}
-			else if (AcquireFocusMob(m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true))
+			else if ((AcquireFocusMob(m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true)) && fama==0)
 			{
 				m_Mobile.DebugSay("My move is blocked, so I am going to attack {0}", m_Mobile.FocusMob.Name);
 
@@ -123,7 +123,7 @@ namespace Server.Mobiles
 
 		public override bool DoActionGuard()
 		{
-			if (AcquireFocusMob(m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true))
+			if ((AcquireFocusMob(m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true) && fama==0))
 			{
 				m_Mobile.DebugSay("I have detected {0}, attacking", m_Mobile.FocusMob.Name);
 
