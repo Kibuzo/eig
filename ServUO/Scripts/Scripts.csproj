@@ -12473,6 +12473,7 @@
     <Compile Include="Mobiles\Normal\PlateFuffaro.cs" />
     <Compile Include="Items\Equipment\Weapons\OrgonicPickaxe.cs" />
     <Compile Include="Mobiles\Normal\ArciereFuffaro.cs" />
+    <Compile Include="Mobiles\AI\FuffaroAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Server\Server.csproj">
