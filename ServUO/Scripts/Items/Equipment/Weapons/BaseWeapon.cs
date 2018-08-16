@@ -3634,8 +3634,8 @@ namespace Server.Items
 			}
 			#endregion
 
-			double totalBonus = strengthBonus + dexBonus + anatomyBonus + tacticsBonus + lumberBonus +
-								((GetDamageBonus() + damageBonus) / 100.0);
+			double totalBonus = (strengthBonus + dexBonus + anatomyBonus + tacticsBonus + lumberBonus +
+				((GetDamageBonus() + damageBonus) / 100.0))/2;
 
 			return damage + (int)(damage * totalBonus);
 		}
