@@ -24,7 +24,7 @@ namespace Server.Mobiles
 				m_Mobile.Combatant = m_Mobile.FocusMob;
 				Mobile mob = m_Mobile.Combatant as Mobile;
 
-				if (mob.Fame>m_Mobile.Fame) {
+				if (mob.Fame>100) {
 					base.DoActionFlee();
 					return true;
 					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
