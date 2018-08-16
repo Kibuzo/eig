@@ -2018,17 +2018,13 @@ namespace Server.Mobiles
 				}
 				else
 				{
-	//Ho aggiunto io questa riga (Kibuzo) 
-
-					if (Race == Race.Elf) {
-						strBase = RawStr - 10;
-					} 
 					else {
 						strBase = RawStr;
 					}
 				}
-
-				return (strBase / 2) + 50 + strOffs;
+				//Ho aggiunto io questa riga (Kibuzo) 
+				if (Race == Race.Elf) return (strBase / 2) + 40 + strOffs;
+				else return (strBase / 2) + 50 + strOffs;
 			}
 		}
 
