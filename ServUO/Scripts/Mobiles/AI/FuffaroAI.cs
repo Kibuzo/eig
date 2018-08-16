@@ -12,7 +12,7 @@ namespace Server.Mobiles
 			: base(m)
 		{
 		}
-			
+		int fama=0;
 		public override bool DoActionWander()
 		{
 			m_Mobile.DebugSay("I have no combatant");
@@ -25,7 +25,7 @@ namespace Server.Mobiles
 				Mobile mob = m_Mobile.Combatant as Mobile;
 
 				if (mob.Fame>100) {
-					Action = ActionType.Backoff;
+					fama = 1;
 					base.DoActionFlee();
 					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
 					return true;
@@ -142,7 +142,7 @@ namespace Server.Mobiles
 		{
 			Mobile c = m_Mobile.Combatant as Mobile;
 
-			if (m_Mobile.Hits > (m_Mobile.HitsMax / 2))
+			if ((m_Mobile.Hits > (m_Mobile.HitsMax / 2)) && fama=0)
 			{
 				// If I have a target, go back and fight them
 				if (c != null && m_Mobile.GetDistanceToSqrt(c) <= m_Mobile.RangePerception * 2)
