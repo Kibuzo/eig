@@ -60,7 +60,7 @@ namespace Server.Items
         {
             get
             {
-                return 2.50f;
+                return 1.50f;
             }
         }
 

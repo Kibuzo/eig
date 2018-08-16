@@ -1468,7 +1468,7 @@ namespace Server.Items
 					{
 						speed = 1;
 					}
-
+					// Kibuzo modified; including the ticks cap disabling
 					ticks = Math.Floor((800000.0 / ((m.Stam + 100) * speed)) - 2);
 				}
 
@@ -3583,7 +3583,7 @@ namespace Server.Items
 				lumberBonus = 0.0;
 				strengthBonus*=2.0;
 			}
-//comincia parte mia
+			//comincia parte mia (Kibuzo)
 			if (Type != WeaponType.Piercing )
 			{
 				dexBonus= 0.0;
