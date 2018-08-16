@@ -30,7 +30,7 @@ namespace Server.Mobiles
 					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
 					return true;
 				} 
-				else if (Utility.RandomDouble() < (((int)mob.Fame-(int)m_Mobile.Fame)/(int)(3*m_Mobile.Fame)))
+				else if (Utility.RandomDouble() < ((mob.Fame-m_Mobile.Fame)/(3*m_Mobile.Fame)))
 				{
 					fama = 1;
 					base.DoActionFlee ();
