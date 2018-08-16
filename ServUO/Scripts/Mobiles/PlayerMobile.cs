@@ -2018,9 +2018,8 @@ namespace Server.Mobiles
 				}
 				else
 				{
-					else {
 						strBase = RawStr;
-					}
+
 				}
 				//Ho aggiunto io questa riga (Kibuzo) 
 				if (Race == Race.Elf)
