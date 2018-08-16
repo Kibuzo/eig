@@ -1037,7 +1037,7 @@ namespace Server.Mobiles
             base.ComputeResistances();
 			// Questa parte l'ho aggiunta io (Kibuzo)
 			Resistances[0] = (int)((RawStr-100.0)/2.0); //era in resistances[0]+=
-			if (Race==Race.Elf) Resistances[0] = (int)((RawStr-100.0)/2.0)-10.0;
+			if (Race==Race.Elf) Resistances[0] = (int)((RawStr-100.0)/2.0-10.0);
 			//fine parte mia
             for (int i = 1; i < Resistances.Length; ++i)
             {
@@ -1082,7 +1082,7 @@ namespace Server.Mobiles
 			int minp = GetMinResistance((ResistanceType)0)-(int)((RawStr-100.0)/2.0);
 			int maxp = (int)((RawStr-100.0)/2.0)+GetMaxResistance((ResistanceType)0);
 			if (Race == Race.Elf)
-				maxp -= 10.0;
+				maxp -= 10;
 			if (maxp < minp)
 			{
 				maxp = minp;
