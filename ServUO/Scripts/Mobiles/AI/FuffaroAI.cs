@@ -25,7 +25,8 @@ namespace Server.Mobiles
 				Mobile mob = m_Mobile.Combatant as Mobile;
 
 				if (mob.Fame >= 100) {
-					Action = ActionType.Flee;
+					//Action = ActionType.Flee;
+					base.DoActionFlee();
 					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
 				} 
 				else {
@@ -51,7 +52,8 @@ namespace Server.Mobiles
 
 				Action = ActionType.Guard;
 				if (mob.Fame >= 100) {
-					Action = ActionType.Flee;
+					//Action = ActionType.Flee;
+					base.DoActionFlee();
 					m_Mobile.Say ("OMG it's {0}! Run for your lives!", c.Name);
 				}
 
