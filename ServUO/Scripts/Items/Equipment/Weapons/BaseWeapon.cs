@@ -3583,9 +3583,10 @@ namespace Server.Items
 				lumberBonus = 0.0;
 			}
 			//comincia parte mia (Kibuzo)
-			if (Type != WeaponType.Piercing )
+			if (Type == WeaponType.Axe)
 			{
-				dexBonus= 0.0;
+				strengthBonus*=3.0;
+				dexBonus=0.0;
 			}
 			if (Type == WeaponType.Piercing)
 			{
@@ -3600,18 +3601,22 @@ namespace Server.Items
 			if (Type==WeaponType.Bashing)
 			{
 				strengthBonus*=3.0;
+				dexBonus=0.0;
 			}
 			if (Type==WeaponType.Staff)
 			{
 				strengthBonus*=3.0;
+				dexBonus=0.0;
 			}
 			if (Type == WeaponType.Fists)
 			{
 				strengthBonus*=4.0;
+				dexBonus=0.0;
 			}
 			if  (Type==WeaponType.Ranged)
 			{
 				dexBonus=GetBonus(attacker.Dex, 1.200, 150.0, 5.00);
+				strengthBonus=0.0;
 			}
 //finisce la parte mia
 			#endregion
