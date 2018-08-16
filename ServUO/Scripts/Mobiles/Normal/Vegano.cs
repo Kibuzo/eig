@@ -8,7 +8,7 @@ namespace Server.Mobiles
 	{
 		[Constructable]
 		public Vegan()
-			: base(FuffaroAI, FightMode.Closest, 10, 1, 0.2, 0.4)
+			: base(AIType.AI_Fuffaro, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
 			bool Fem=false;
 			SpeechHue = 18;
