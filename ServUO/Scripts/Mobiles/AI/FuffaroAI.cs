@@ -23,7 +23,7 @@ namespace Server.Mobiles
 			return null;
 		}
 
-
+	
 		public override bool DoActionWander()
 		{
 			m_Mobile.DebugSay("I have no combatant");
@@ -32,7 +32,7 @@ namespace Server.Mobiles
 			{
 				m_Mobile.DebugSay("I have detected {0}, attacking", m_Mobile.FocusMob.Name);
 
-				mob = GetCombatant (m_Mobile.Combatant);
+				mob = GetCombatant;
 				if (mob.Fame >= 100) {
 					Action = ActionType.Flee;
 					m_Mobile.Say ("Flee!");
