@@ -142,7 +142,7 @@ namespace Server.Mobiles
 		{
 			Mobile c = m_Mobile.Combatant as Mobile;
 
-			if ((m_Mobile.Hits > (m_Mobile.HitsMax / 2)) && fama=0)
+			if ((m_Mobile.Hits > (m_Mobile.HitsMax / 2)) && fama==0)
 			{
 				// If I have a target, go back and fight them
 				if (c != null && m_Mobile.GetDistanceToSqrt(c) <= m_Mobile.RangePerception * 2)
