@@ -1469,7 +1469,7 @@ namespace Server.Items
 						speed = 1;
 					}
 
-					ticks = Math.Floor((80000.0 / ((m.Stam + 100) * speed)) - 2);
+					ticks = Math.Floor((800000.0 / ((m.Stam + 100) * speed)) - 2);
 				}
 
 				// Swing speed currently capped at one swing every 1.25 seconds (5 ticks).
@@ -1478,7 +1478,7 @@ namespace Server.Items
 				//	ticks = 5;
 				//}
 
-				delayInSeconds = ticks * 0.5; //era * 0.25
+				delayInSeconds = ticks * 0.33; //era * 0.25
 			}
 			else if (Core.AOS)
 			{
