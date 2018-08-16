@@ -8,7 +8,7 @@ namespace Server.Mobiles
 {
 	public class FuffaroAI : BaseAI
 	{
-		public FuffaroAI(BaseCreature m)
+		public FuffaroAI (BaseCreature m)
 			: base(m)
 		{
 		}

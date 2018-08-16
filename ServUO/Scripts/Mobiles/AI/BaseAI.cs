@@ -50,6 +50,7 @@ namespace Server.Mobiles
         AI_Mystic,
         AI_Paladin,
         AI_Necro,
+		AI_Fuffaro,
 	}
 
 	public enum ActionType
