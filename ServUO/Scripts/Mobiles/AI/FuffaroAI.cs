@@ -30,14 +30,11 @@ namespace Server.Mobiles
 					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
 					return true;
 				} 
-				else if ((int)mob.Fame>(int)(m_Mobile.Fame)) {
-					if (Utility.RandomDouble() > 0.9) {
-						fama = 1;
-						base.DoActionFlee ();
-						m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
-						return true;
-					} 
-					else Action = ActionType.Combat;
+				else if (Utility.RandomDouble() > (((int)mob.Fame-(int)m_Mobile.Fame)/(int)(3*m_Mobile.Fame)))
+				{
+					fama = 1;
+					base.DoActionFlee ();
+					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
 					return true;
 				} 
 				else {
