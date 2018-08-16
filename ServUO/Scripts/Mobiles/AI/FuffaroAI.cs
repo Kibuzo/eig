@@ -30,7 +30,9 @@ namespace Server.Mobiles
 			if (AcquireFocusMob(m_Mobile.RangePerception, m_Mobile.FightMode, false, false, true))
 			{
 				m_Mobile.DebugSay("I have detected {0}, attacking", m_Mobile.FocusMob.Name);
-				Mobile mob = GetCombatant(m_Mobile);
+				//Mobile mob = GetCombatant(m_Mobile);
+				//m_Mobile.Say("Well, hello there", m_Mobile.FocusMob.)
+				Mobile mob = m_Mobile.FocusMob as Mobile;
 				if (mob.Fame >= 100) {
 					Action = ActionType.Flee;
 					m_Mobile.Say ("Flee!");
