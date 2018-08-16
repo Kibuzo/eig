@@ -23,6 +23,12 @@ namespace Server.Mobiles
 
 				m_Mobile.Combatant = m_Mobile.FocusMob;
 				Action = ActionType.Combat;
+				Mobile mob = m_Mobile.Combatant as Mobile;
+				if (mob.Fame >= 100) {
+					Action = ActionType.Flee;
+					m_Mobile.Say ("OMG it's {0}! Run for your lives!", c.Name);
+				}
+
 			}
 			else
 			{
@@ -36,7 +42,7 @@ namespace Server.Mobiles
 		{
 			IDamageable c = m_Mobile.Combatant;
 			Mobile mob = c as Mobile;
-			//if (c == null || c.Deleted || c.Map != m_Mobile.Map || !c.Alive || (c is Mobile && ((Mobile)c).IsDeadBondedPet))
+			if (c == null || c.Deleted || c.Map != m_Mobile.Map || !c.Alive || (c is Mobile && ((Mobile)c).IsDeadBondedPet))
 			{
 				m_Mobile.DebugSay("My combatant is gone, so my guard is up");
 
