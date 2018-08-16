@@ -37,7 +37,7 @@ namespace Server.Items
         {
             get
             {
-                return 40;
+                return 80;
             }
         }
         public override int AosMinDamage
@@ -65,7 +65,7 @@ namespace Server.Items
         {
             get
             {
-                return 3.75f;
+                return 4.0f;
             }
         }
         public override int OldStrengthReq
@@ -121,7 +121,7 @@ namespace Server.Items
         {
             get
             {
-                return 100;
+                return 200;
             }
         }
         public override void Serialize(GenericWriter writer)

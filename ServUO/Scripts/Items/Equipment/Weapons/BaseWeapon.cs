@@ -1473,10 +1473,10 @@ namespace Server.Items
 				}
 
 				// Swing speed currently capped at one swing every 1.25 seconds (5 ticks).
-				if (ticks < 5)
-				{
-					ticks = 5;
-				}
+				//if (ticks < 5)
+				//{
+				//	ticks = 5;
+				//}
 
 				delayInSeconds = ticks * 0.25;
 			}
@@ -3619,9 +3619,9 @@ namespace Server.Items
             */
 			int damageBonus = AosAttributes.GetValue(attacker, AosAttribute.WeaponDamage);
 
-			if (damageBonus > 200) //era 100
+			if (damageBonus > 100) //era 100
 			{
-				damageBonus = 200; //era 100
+				damageBonus = 100; //era 100
 			}
 			#endregion
 
