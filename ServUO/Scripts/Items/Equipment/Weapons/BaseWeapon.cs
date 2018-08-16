@@ -3634,10 +3634,10 @@ namespace Server.Items
 			}
 			#endregion
 
-			double totalBonus = (strengthBonus + dexBonus + anatomyBonus + tacticsBonus + lumberBonus +
-				((GetDamageBonus() + damageBonus) / 100.0))/2;
+			double totalBonus = strengthBonus + dexBonus + anatomyBonus + tacticsBonus + lumberBonus +
+				((GetDamageBonus() + damageBonus) / 100.0);
 
-			return damage + (int)(damage * totalBonus);
+			return (int)((damage + damage * totalBonus)*0.8);
 		}
 
 		public virtual int VirtualDamageBonus { get { return 0; } }
