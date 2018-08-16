@@ -3580,6 +3580,9 @@ namespace Server.Mobiles
                 case AIType.AI_Necro:
                     m_AI = new NecroAI(this);
                     break;
+			case AIType.AI_Fuffaro:
+					m_AI = new FuffaroAI(this);
+					break;
             }
         }
 
