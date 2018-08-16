@@ -41,10 +41,10 @@ namespace Server.Mobiles
 				m_Mobile.DebugSay("My combatant is gone, so my guard is up");
 
 				Action = ActionType.Guard;
-				//if (mob.Fame >= 100) {
-				//	Action = ActionType.Flee;
-			//		m_Mobile.Say ("OMG it's {0}! Run for your lives!", c.Name);
-			//	}
+				if (mob.Fame >= 100) {
+					Action = ActionType.Flee;
+					m_Mobile.Say ("OMG it's {0}! Run for your lives!", c.Name);
+				}
 
 				return true;
 			}
