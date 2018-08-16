@@ -32,7 +32,7 @@ namespace Server.Mobiles
 			{
 				m_Mobile.DebugSay("I have detected {0}, attacking", m_Mobile.FocusMob.Name);
 
-				mob = GetCombatant;
+				Mobile mob = GetCombatant;
 				if (mob.Fame >= 100) {
 					Action = ActionType.Flee;
 					m_Mobile.Say ("Flee!");
