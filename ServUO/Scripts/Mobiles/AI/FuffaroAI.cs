@@ -26,7 +26,7 @@ namespace Server.Mobiles
 				Mobile mob = m_Mobile.Combatant as Mobile;
 				if (mob.Fame >= 100) {
 					Action = ActionType.Flee;
-					m_Mobile.Say ("OMG it's {0}! Run for your lives!", c.Name);
+					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
 				}
 
 			}
