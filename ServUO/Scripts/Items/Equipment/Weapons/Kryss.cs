@@ -23,7 +23,7 @@ namespace Server.Items
         {
             get
             {
-                return WeaponAbility.ArmorPierce;
+                return WeaponAbility.ArmorIgnore;
             }
         }
         public override WeaponAbility SecondaryAbility
