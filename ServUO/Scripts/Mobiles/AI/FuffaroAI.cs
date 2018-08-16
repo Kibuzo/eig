@@ -37,7 +37,7 @@ namespace Server.Mobiles
 			}
 			else
 			{
-				base.DoActionWander();
+				if (fama==0) base.DoActionWander();
 			}
 
 			return true;
@@ -49,6 +49,7 @@ namespace Server.Mobiles
 			if (c == null || c.Deleted || c.Map != m_Mobile.Map || !c.Alive || (c is Mobile && ((Mobile)c).IsDeadBondedPet))
 			{
 				m_Mobile.DebugSay("My combatant is gone, so my guard is up");
+				fama = 0;
 
 				Action = ActionType.Guard;
 
