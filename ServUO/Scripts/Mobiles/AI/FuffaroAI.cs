@@ -22,13 +22,16 @@ namespace Server.Mobiles
 				m_Mobile.DebugSay("I have detected {0}, attacking", m_Mobile.FocusMob.Name);
 
 				m_Mobile.Combatant = m_Mobile.FocusMob;
-				Action = ActionType.Combat;
 				Mobile mob = m_Mobile.Combatant as Mobile;
+
 				if (mob.Fame >= 100) {
 					Action = ActionType.Flee;
 					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
+				} 
+				else {
+					Action = ActionType.Combat;
 				}
-
+					
 			}
 			else
 			{
