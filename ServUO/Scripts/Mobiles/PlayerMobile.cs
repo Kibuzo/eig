@@ -2023,7 +2023,7 @@ namespace Server.Mobiles
 				}
 				//Ho aggiunto io questa riga (Kibuzo) 
 				if (Race == Race.Elf)
-				{return (strBase / 2) + 40 + strOffs;}
+				{return (strBase / 2) + 45 + strOffs;}
 				else 
 				{return (strBase / 2) + 50 + strOffs;}
 			}
