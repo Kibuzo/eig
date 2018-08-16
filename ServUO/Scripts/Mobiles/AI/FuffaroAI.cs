@@ -32,12 +32,6 @@ namespace Server.Mobiles
 				m_Mobile.DebugSay("I have detected {0}, attacking", m_Mobile.FocusMob.Name);
 				//Mobile mob = GetCombatant(m_Mobile);
 				//m_Mobile.Say("Well, hello there", m_Mobile.FocusMob.)
-				Mobile mob = m_Mobile.FocusMob as Mobile;
-				if (mob.Fame >= 100) {
-					Action = ActionType.Flee;
-					m_Mobile.Say ("Flee!");
-				}
-				else
 					Action = ActionType.Combat;
 			}
 			else
@@ -51,12 +45,16 @@ namespace Server.Mobiles
 		public override bool DoActionCombat()
 		{
 			IDamageable c = m_Mobile.Combatant;
-
+			Mobile mob = c as Mobile;
 			if (c == null || c.Deleted || c.Map != m_Mobile.Map || !c.Alive || (c is Mobile && ((Mobile)c).IsDeadBondedPet))
 			{
 				m_Mobile.DebugSay("My combatant is gone, so my guard is up");
 
 				Action = ActionType.Guard;
+				if (mob.Fame >= 100) {
+					Action = ActionType.Flee;
+					m_Mobile.Say ("OMG it's {0}! Run for your lives!", c.Name);
+				}
 
 				return true;
 			}
