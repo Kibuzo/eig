@@ -3609,7 +3609,7 @@ namespace Server.Items
 			{
 				strengthBonus*=4.0;
 			}
-			if  (Type=WeaponType.Ranged)
+			if  (Type==WeaponType.Ranged)
 			{
 				dexBonus=GetBonus(attacker.Dex, 1.200, 150.0, 5.00);
 			}
