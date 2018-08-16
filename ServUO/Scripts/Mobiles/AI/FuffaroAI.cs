@@ -26,7 +26,7 @@ namespace Server.Mobiles
 
 				if (mob.Fame>m_Mobile.Fame) {
 					base.DoActionFlee();
-					break;
+					return true;
 					m_Mobile.Say ("OMG it's {0}! Run for your lives!", m_Mobile.Combatant.Name);
 				} 
 				else {
