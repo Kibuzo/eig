@@ -1037,6 +1037,8 @@ namespace Server.Mobiles
             base.ComputeResistances();
 			// Questa parte l'ho aggiunta io (Kibuzo)
 			Resistances[0] = (int)((RawStr-100.0)/2.0); //era in resistances[0]+=
+			if (Race==Race.Elf) Resistances[0] = (int)((RawStr-100.0)/2.0)-10.0;
+			//fine parte mia
             for (int i = 1; i < Resistances.Length; ++i)
             {
                 Resistances[i] = 0;
@@ -1076,12 +1078,32 @@ namespace Server.Mobiles
                 Resistances[3] += setItem != null && setItem.SetEquipped ? setItem.SetResistBonus(ResistanceType.Poison) : item.PoisonResistance;
                 Resistances[4] += setItem != null && setItem.SetEquipped ? setItem.SetResistBonus(ResistanceType.Energy) : item.EnergyResistance;
             }
+			// Ho modificato così la parte della resistenza fisica (Kibuzo)
+			int minp = GetMinResistance((ResistanceType)0)-(int)((RawStr-100.0)/2.0);
+			int maxp = (int)((RawStr-100.0)/2.0)+GetMaxResistance((ResistanceType)0);
+			if (Race == Race.Elf)
+				maxp -= 10.0;
+			if (maxp < minp)
+			{
+				maxp = minp;
+			}
+			if (Resistances[0] > maxp)
+			{
+				Resistances[0] = maxp;
+			}
+			else if (Resistances[0] < minp)
+			{
+				Resistances[0] = minp;
+			}
 
-            for (int i = 0; i < Resistances.Length; ++i)
+
+            for (int i = 1; i < Resistances.Length; ++i)
             {
-				//Ho modificato qui (Kibuzo)
-				int min = GetMinResistance((ResistanceType)i)-(int)((RawStr-100.0)/2.0);
-				int max = (int)((RawStr-100.0)/2.0)+GetMaxResistance((ResistanceType)i);
+				//Ho modificato così la resistenza magica (Kibuzo)
+				int min = GetMinResistance((ResistanceType)i)-(int)((RawInt-100.0)/2.0);
+				int max = (int)((RawInt-100.0)/2.0)+GetMaxResistance((ResistanceType)i);
+
+				//parte fisica
 
                 if (max < min)
                 {
@@ -1996,9 +2018,14 @@ namespace Server.Mobiles
 				}
 				else
 				{
-	//Ho aggiunto io questa riga (Kibuzo)
-					if (Race==Race.Elf) strBase=RawStr-10;
-					else strBase = RawStr;
+	//Ho aggiunto io questa riga (Kibuzo) 
+
+					if (Race == Race.Elf) {
+						strBase = RawStr - 10;
+					} 
+					else {
+						strBase = RawStr;
+					}
 				}
 
 				return (strBase / 2) + 50 + strOffs;
