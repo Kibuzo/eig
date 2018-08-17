@@ -71,7 +71,7 @@ namespace Server.Mobiles
 			Utility.AssignRandomHair(this);
 		}
 
-		public Amish(Serial serial)
+		public AmishAstronomer(Serial serial)
 			: base(serial)
 		{
 		}
