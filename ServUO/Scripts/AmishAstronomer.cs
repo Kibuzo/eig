@@ -83,11 +83,11 @@ namespace Server.Mobiles
 				return false;
 			}
 		}
-		public override bool AlwaysMurderer
+		public override bool AlwaysAttackable
 		{
 			get
 			{
-				return false;
+				return true;
 			}
 		}
 
