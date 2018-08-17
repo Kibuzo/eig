@@ -262,7 +262,7 @@ namespace Server
 			new LootPack(
 				new[]
 				{
-					new LootPackEntry(true, Gold, 100.00, "2d10+20"), new LootPackEntry(true, AmishAstronomer, 100.00,1, 5, 0, 100)
+					new LootPackEntry(true, Gold, 100.00, "2d10+20"), new LootPackEntry(true, AmishAstronomer, 100.00,1, 5, 15, 100)
 				});
 		
 		public static readonly LootPack SePoor =

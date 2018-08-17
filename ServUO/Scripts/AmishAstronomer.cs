@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		{
 			bool Fem=false;
 			SpeechHue = 19;
-			Title = "the amish";
+			Title = "the amish observatory techician";
 			Hue = Utility.RandomSkinHue();
 
 			switch (Utility.Random (2)) {
@@ -45,23 +45,23 @@ namespace Server.Mobiles
 				AddItem (new LongPants (Utility.RandomNeutralHue()));
 			}
 
-			SetStr(40, 60);
-			SetDex(30, 40);
+			SetStr(100, 120);
+			SetDex(60, 80);
 			SetInt(1, 5);
 			SetDamage(1, 2);
 			SetHits (80 - 90);
 
 			if (Fem)
 			{
-				SetStr (35,50);
-				SetDex (40,90);
+				SetStr (80,100);
+				SetDex (100,120);
 				SetInt (1,5);
 				SetHits (60 - 80);
 				SetDamage (3,4);
 			}
 
-			SetSkill(SkillName.Tactics, 3.0, 7.5);
-			SetSkill(SkillName.Wrestling, 3.0, 7.5);
+			SetSkill(SkillName.Tactics, 30.0, 7.5);
+			SetSkill(SkillName.Wrestling, 30.0, 7.5);
 
 			Fame = 0;
 			Karma = 0;
@@ -101,14 +101,14 @@ namespace Server.Mobiles
 
 		public override bool OnBeforeDeath()
 		{
-			Say ("Manners sir, manners!");
+			Say ("Could not detect the source at radio wavelengths");
 			return base.OnBeforeDeath();
 		}
 
 
 		public override void GenerateLoot()
 		{
-			if (Utility.RandomDouble()<0.2)
+			if (Utility.RandomDouble()<1)
 			{ 
 				AddLoot(LootPack.Poor);
 				AddLoot(LootPack.AstronomerAmish);
@@ -123,7 +123,7 @@ namespace Server.Mobiles
 				switch ( Utility.Random(1))
 				{
 				case 0:
-					Say ("I don't use kosher salt, I don't see why i should");
+					Say ("SNR is so high with my hay");
 					break;
 				case 1:
 					break;
@@ -139,10 +139,10 @@ namespace Server.Mobiles
 				switch ( Utility.Random(2))
 				{
 				case 0:
-					Say ("Manners sir, manners!");
+					Say ("Could not pinpoint source");
 					break;
 				case 1:
-					Say ("Oh, bloody hell!");
+					Say ("That spectral feature was not expected");
 					break;
 				case 2:
 					Say ("");
