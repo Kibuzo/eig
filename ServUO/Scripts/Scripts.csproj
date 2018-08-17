@@ -12474,6 +12474,8 @@
     <Compile Include="Items\Equipment\Weapons\OrgonicPickaxe.cs" />
     <Compile Include="Mobiles\Normal\ArciereFuffaro.cs" />
     <Compile Include="Mobiles\AI\FuffaroAI.cs" />
+    <Compile Include="Items\Equipment\Armor\DishFragment.cs" />
+    <Compile Include="AmishAstronomer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Server\Server.csproj">
