@@ -225,6 +225,10 @@ namespace Server
 			new LootPackItem(typeof(BaseJewel), 164)
 		};
 
+		public static readonly LootPackItem[] AmishAstronomer = new[] {
+			new LootPackItem (typeof(DishFragment), 100)
+		};
+
 		public static readonly LootPackItem[] AosMagicItemsFilthyRichType2 = new[]
 		{
 			new LootPackItem(typeof(BaseWeapon), 239), new LootPackItem(typeof(BaseRanged), 60),

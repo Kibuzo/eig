@@ -111,7 +111,7 @@ namespace Server.Mobiles
 			if (Utility.RandomDouble()<0.2)
 			{ 
 				AddLoot(LootPack.Poor);
-				AddLoot(LootPackItem typeof(DishFragment, 100));
+				AddLoot(LootPack.AmishAstronomer);
 			}
 		}
 
