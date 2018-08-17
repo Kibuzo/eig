@@ -1101,7 +1101,7 @@ namespace Server.Mobiles
             {
 				//Ho modificato così la resistenza magica (Kibuzo)
 				int min = GetMinResistance((ResistanceType)i)-(int)((RawInt-100.0)/2.0);
-				int max = (int)((RawInt-100.0)/2.0)+GetMaxResistance((ResistanceType)i);
+				int max = (int)((ManaMax-100.0)/5.0)+GetMaxResistance((ResistanceType)i);
 
 				//parte fisica
 
