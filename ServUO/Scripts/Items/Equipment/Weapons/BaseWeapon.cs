@@ -3610,7 +3610,7 @@ namespace Server.Items
 			}
 			if (Type == WeaponType.Fists)
 			{
-				strengthBonus*=4.0;
+				strengthBonus*=3.0;
 				dexBonus=0.0;
 			}
 			if  (Type==WeaponType.Ranged)
