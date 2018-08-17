@@ -63,7 +63,7 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Tactics, 30.0, 7.5);
 			SetSkill(SkillName.Wrestling, 30.0, 7.5);
 
-			Fame = 0;
+			Fame = 1500;
 			Karma = 0;
 
 
@@ -87,7 +87,7 @@ namespace Server.Mobiles
 		{
 			get
 			{
-				return true;
+				return false;
 			}
 		}
 
