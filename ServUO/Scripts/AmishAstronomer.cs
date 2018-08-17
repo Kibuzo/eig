@@ -60,10 +60,10 @@ namespace Server.Mobiles
 				SetDamage (3,4);
 			}
 
-			SetSkill(SkillName.Tactics, 30.0, 7.5);
-			SetSkill(SkillName.Wrestling, 30.0, 7.5);
+			SetSkill(SkillName.Tactics, 30.0, 45);
+			SetSkill(SkillName.Wrestling, 30.0, 45);
 
-			Fame = 1500;
+			Fame = 2500;
 			Karma = 0;
 
 
