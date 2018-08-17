@@ -7,7 +7,7 @@ namespace Server.Mobiles
 	public class AmishAstronomer : BaseCreature
 	{
 		[Constructable]
-		public Amish()
+		public AmishAstronomer()
 			: base(AIType.AI_Fuffaro, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
 			bool Fem=false;
