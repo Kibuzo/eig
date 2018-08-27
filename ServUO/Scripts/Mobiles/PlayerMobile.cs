@@ -2129,7 +2129,7 @@ namespace Server.Mobiles
 				return false;
 			}
 
-			m_NextMovementTime += speed;
+			m_NextMovementTime += speed*(75/base.Stam);
 
             if (!Siege.SiegeShard && Core.TickCount - NextPassiveDetectHidden >= 0)
             {

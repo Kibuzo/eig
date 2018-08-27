@@ -1238,7 +1238,7 @@
       <rect x="1595" y="550" width="120" height="120" />
     </region>
     <!--End-->
-    <region type="TownRegion" priority="50" name="Cove">
+    <region type="MondainRegion" priority="50" name="Borgo Salcazzo">
       <rect x="2200" y="1110" width="50" height="50" />
       <rect x="2200" y="1160" width="86" height="86" />
       <go x="2275" y="1210" z="0" />

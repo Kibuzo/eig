@@ -3483,7 +3483,7 @@ namespace Server
 
 			if (Mounted)
 			{
-				delay = (dir & Direction.Running) != 0 ? m_RunMount : m_WalkMount;
+				delay = (dir & Direction.Running) != 0 ? m_RunMount : m_WalkMount
 			}
 			else
 			{
