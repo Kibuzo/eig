@@ -2111,7 +2111,7 @@ namespace Server.Mobiles
 				}
 			}
 
-			int speed = ComputeMovementSpeed(d);
+			int speed = (int)(ComputeMovementSpeed(d)*(1-(75/base.Stam)));
 
 			bool res;
 
@@ -2129,7 +2129,7 @@ namespace Server.Mobiles
 				return false;
 			}
 
-			m_NextMovementTime += speed*(75/base.Stam);
+			m_NextMovementTime += speed;
 
             if (!Siege.SiegeShard && Core.TickCount - NextPassiveDetectHidden >= 0)
             {
