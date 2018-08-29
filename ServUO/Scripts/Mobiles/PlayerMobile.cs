@@ -2091,6 +2091,22 @@ namespace Server.Mobiles
 
         public long NextPassiveDetectHidden { get; set; }
 
+		public override int ComputeMovementSpeed(Direction dir, bool checkTurning)
+		{
+			int delay;
+
+			if (Mounted)
+			{
+				delay = (dir & Direction.Running) != 0 ? m_RunMount : m_WalkMount
+			}
+			else
+			{
+				delay = (dir & Direction.Running) != 0 ? m_RunFoot : m_WalkFoot;
+			}
+
+			return (int)(delay*((1-(300/base.Stam))));
+		}
+
 		public override bool Move(Direction d)
 		{
 			NetState ns = NetState;
@@ -2111,7 +2127,7 @@ namespace Server.Mobiles
 				}
 			}
 
-			int speed = (int)(ComputeMovementSpeed(d)*(1-(300/base.Stam)));
+			int speed = (int)(ComputeMovementSpeed(d));
 
 			bool res;
 
