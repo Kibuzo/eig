@@ -2111,7 +2111,7 @@ namespace Server.Mobiles
 				}
 			}
 
-			int speed = (int)(ComputeMovementSpeed(d)*(1-(75/base.Stam)));
+			int speed = (int)(ComputeMovementSpeed(d)*(1-(300/base.Stam)));
 
 			bool res;
 
