@@ -177,7 +177,7 @@ namespace Server.Items
         {
             get
             {
-                return 80;
+                return 26;
             }
         }
         public override int AosMinDamage
@@ -240,7 +240,7 @@ namespace Server.Items
         {
             get
             {
-                return 0x237;
+                return 0x23C;
             }
         }
         public override int DefMissSound

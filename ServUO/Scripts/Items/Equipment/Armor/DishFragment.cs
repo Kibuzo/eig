@@ -12,6 +12,7 @@ namespace Server.Items
 			this.Weight = 6.0;
 			this.OwnerName = "An amish radiotelescope dish fragment";
 				this.Hue= 253;
+			this.Attributes.DefendChance=20;
 		}
 
 		public DishFragment(Serial serial)

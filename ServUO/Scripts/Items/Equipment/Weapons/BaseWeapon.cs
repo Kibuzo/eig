@@ -1438,6 +1438,7 @@ namespace Server.Items
 
 			if (Core.SE)
 			{
+				double heavy=(-(m.Str)+(StrRequirement+50));
 				/*
                 * This is likely true for Core.AOS as well... both guides report the same
                 * formula, and both are wrong.
@@ -1468,7 +1469,7 @@ namespace Server.Items
 					{
 						speed = 1;
 					}
-					// Kibuzo modified; including the ticks cap disabling
+					// Kibuzo modified; including the ticks cap disabling and streq
 					ticks = Math.Floor((800000.0 / ((m.Stam + 100) * speed)) - 2);
 				}
 
@@ -1479,6 +1480,11 @@ namespace Server.Items
 				//}
 
 				delayInSeconds = ticks * 0.4; //era * 0.25
+				if (heavy>0){
+					delayInSeconds*=(1+heavy/50);
+					m.Stam-=(int)(heavy/5);
+					m.SendMessage("You can swing your weapon, but it takes a lot of effort!");
+				}
 			}
 			else if (Core.AOS)
 			{
