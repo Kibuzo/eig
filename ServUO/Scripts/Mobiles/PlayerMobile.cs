@@ -1038,17 +1038,21 @@ namespace Server.Mobiles
 			// Questa parte l'ho aggiunta io (Kibuzo)
 			Resistances[0] = (int)((RawStr-100.0)/2.0); //era in resistances[0]+=
 			if (Race==Race.Elf) Resistances[0] = (int)((RawStr-100.0)/2.0-5.0);
+
 			//fine parte mia
             for (int i = 1; i < Resistances.Length; ++i)
             {
                 Resistances[i] = 0;
             }
+			Resistances[3] = (int)((RawStr-100.0)/2.0); //Also poison res depends on str
+
 
 			Resistances[0] += BasePhysicalResistance;
             Resistances[1] += BaseFireResistance;
             Resistances[2] += BaseColdResistance;
             Resistances[3] += BasePoisonResistance;
             Resistances[4] += BaseEnergyResistance;
+
 
             for (int i = 0; ResistanceMods != null && i < ResistanceMods.Count; ++i)
             {
@@ -1095,29 +1099,40 @@ namespace Server.Mobiles
 			{
 				Resistances[0] = minp;
 			}
+			if (Resistances[3] > maxp)
+			{
+				Resistances[3] = maxp;
+			}
+			else if (Resistances[3] < minp)
+			{
+				Resistances[3] = minp;
+			}
 
 
             for (int i = 1; i < Resistances.Length; ++i)
             {
-				//Ho modificato così la resistenza magica (Kibuzo)
-				int min = GetMinResistance((ResistanceType)i)-(int)((RawInt-100.0)/2.0);
-				int max = (int)((ManaMax-100.0)/5.0)+GetMaxResistance((ResistanceType)i);
+				if (i!=3)
+				{
+					//Ho modificato così la resistenza magica (Kibuzo)
+					int min = GetMinResistance((ResistanceType)i)-(int)((RawInt-100.0)/2.0);
+					int max = (int)((ManaMax-100.0)/5.0)+GetMaxResistance((ResistanceType)i);
 
-				//parte fisica
+					//parte fisica
 
-                if (max < min)
-                {
+                	if (max < min)
+                	{
                     max = min;
-                }
+                	}
 
-                if (Resistances[i] > max)
-                {
+                	if (Resistances[i] > max)
+                	{
                     Resistances[i] = max;
-                }
-                else if (Resistances[i] < min)
-                {
+                	}
+                	else if (Resistances[i] < min)
+                	{
                     Resistances[i] = min;
-                }
+                	}
+				}
             }
         }
 
@@ -2023,9 +2038,9 @@ namespace Server.Mobiles
 				}
 				//Ho aggiunto io questa riga (Kibuzo) 
 				if (Race == Race.Elf)
-				{return (strBase / 2) + 45 + strOffs;}
+				{return (strBase / 3) + 60 + strOffs;} //era strbase/2 + 50 + stroffs
 				else 
-				{return (strBase / 2) + 50 + strOffs;}
+				{return (strBase / 2) + 60 + strOffs;}
 			}
 		}
 
@@ -2090,22 +2105,6 @@ namespace Server.Mobiles
 		#endregion
 
         public long NextPassiveDetectHidden { get; set; }
-
-		public override int ComputeMovementSpeed(Direction dir, bool checkTurning)
-		{
-			int delay;
-
-			if (Mounted)
-			{
-				delay = (dir & Direction.Running) != 0 ? m_RunMount : m_WalkMount
-			}
-			else
-			{
-				delay = (dir & Direction.Running) != 0 ? m_RunFoot : m_WalkFoot;
-			}
-
-			return (int)(delay*((1-(300/base.Stam))));
-		}
 
 		public override bool Move(Direction d)
 		{
@@ -5919,7 +5918,7 @@ namespace Server.Mobiles
 		#endregion
 
 		#region Fastwalk Prevention
-		private static bool FastwalkPrevention = true; // Is fastwalk prevention enabled?
+		private static bool FastwalkPrevention = false; // Is fastwalk prevention enabled?
 
 		private static int FastwalkThreshold = 400; // Fastwalk prevention will become active after 0.4 seconds
 
@@ -5928,7 +5927,7 @@ namespace Server.Mobiles
 
         public long NextMovementTime { get { return m_NextMovementTime; } }
 
-		public virtual bool UsesFastwalkPrevention { get { return (IsPlayer()) & !Flying; } }
+		public virtual bool UsesFastwalkPrevention { get { return false; } } //{ get { return ((IsPlayer()) & !Flying; } } Kibuzo was here
 
 		public override int ComputeMovementSpeed(Direction dir, bool checkTurning)
 		{
@@ -5952,10 +5951,10 @@ namespace Server.Mobiles
 
 			if (onHorse || (animalContext != null && animalContext.SpeedBoost))
 			{
-				return (running ? RunMount : WalkMount);
+				return (int)((running ? RunMount : WalkMount)*(1-(base.Stam/500))); //was here too
 			}
 
-			return (running ? RunFoot : WalkFoot);
+			return (int)((running ? RunFoot : WalkFoot)*(1-(base.Stam/500))); //kibuzo was here, for nothing
 		}
 
 		public static bool MovementThrottle_Callback(NetState ns)
@@ -5984,7 +5983,7 @@ namespace Server.Mobiles
 				return true;
 			}
 
-			return (ts < FastwalkThreshold);
+			return true;//(ts < FastwalkThreshold); Kibuzo was here
 		}
 		#endregion
 

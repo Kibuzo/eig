@@ -229,6 +229,10 @@ namespace Server
 			new LootPackItem (typeof(DishFragment), 100)
 		};
 
+		public static readonly LootPackItem[] BossFuffaro = new[] {
+			new LootPackItem (typeof(ClimateSword), 100)
+		};
+
 		public static readonly LootPackItem[] AosMagicItemsFilthyRichType2 = new[]
 		{
 			new LootPackItem(typeof(BaseWeapon), 239), new LootPackItem(typeof(BaseRanged), 60),
@@ -263,6 +267,13 @@ namespace Server
 				new[]
 				{
 					new LootPackEntry(true, Gold, 100.00, "2d10+20"), new LootPackEntry(true, AmishAstronomer, 100.00,1, 5, 15, 100)
+				});
+			
+		public static readonly LootPack FuffaroBoss =
+			new LootPack(
+				new[]
+				{
+					new LootPackEntry(true, Gold, 100.00, "2d10+20"), new LootPackEntry(true, BossFuffaro, 100.00,1, 5, 15, 100)
 				});
 		
 		public static readonly LootPack SePoor =
