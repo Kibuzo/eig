@@ -230,7 +230,7 @@ namespace Server
 		};
 
 		public static readonly LootPackItem[] BossFuffaro = new[] {
-			new LootPackItem (typeof(ClimateSword), 100)
+			new LootPackItem (typeof(ClimateSword), 50), new LootPackItem(typeof(ClimateKryss),50)
 		};
 
 		public static readonly LootPackItem[] AosMagicItemsFilthyRichType2 = new[]

@@ -12,58 +12,34 @@ namespace Server.Mobiles
 		{
 			bool Fem=false;
 			SpeechHue = 19;
-			Title = "the amish observatory techician";
+			Title = "the group admin";
 			Hue = Utility.RandomSkinHue();
-
-			switch (Utility.Random (2)) {
-			case 0:
-				AddItem (new Carrot());
-				break;
-			case 1:
-				AddItem (new Squash());
-				break;
-			case 2:
-				AddItem (new Pumpkin());
-				break;
-			}
-
-			AddItem (new SheafOfHay ());
-			AddItem (new Shirt(Utility.RandomNeutralHue()));
-			AddItem (new Shoes (Utility.RandomNeutralHue()));
 
 			if (Female = Utility.RandomBool())
 			{
 				Fem = true;
 				Body = 0x191;
-				Name = NameList.RandomName("female");
-				AddItem (new Skirt(Utility.RandomNeutralHue()));
+				Name = "Franco Mario";
 			}
 			else
 			{
 				Body = 0x190;
-				Name = NameList.RandomName("male");
-				AddItem (new LongPants (Utility.RandomNeutralHue()));
+				Name = "Franco Mario";
 			}
+			AddItem (new OrgonicKilt(Utility.RandomBlueHue()));
+			AddItem (new OrgonicBoots(Utility.RandomBlueHue()));
+			AddItem (new OrgonicShirt(Utility.RandomBlueHue()));
 
-			SetStr(100, 120);
-			SetDex(60, 80);
+			SetStr(400, 420);
+			SetDex(160, 180);
 			SetInt(1, 5);
-			SetDamage(1, 2);
-			SetHits (80 - 90);
-
-			if (Fem)
-			{
-				SetStr (80,100);
-				SetDex (100,120);
-				SetInt (1,5);
-				SetHits (60 - 80);
-				SetDamage (3,4);
-			}
+			SetDamage(18, 20);
+			SetHits (300 - 400);
 
 			SetSkill(SkillName.Tactics, 80.0, 85);
 			SetSkill(SkillName.Wrestling, 80.0, 85);
 
-			Fame = 8000;
+			Fame = 10000;
 			Karma = -10000;
 
 
@@ -111,7 +87,7 @@ namespace Server.Mobiles
 			if (Utility.RandomDouble()<1)
 			{ 
 				AddLoot(LootPack.FilthyRich);
-				//AddLoot(LootPack.FrancoMario);
+				AddLoot(LootPack.FuffaroBoss);
 			}
 		}
 
