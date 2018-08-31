@@ -31,13 +31,13 @@ namespace Server.Mobiles
 			AddItem (new OrgonicShirt(Utility.RandomBlueHue()));
 
 			SetStr(400, 420);
-			SetDex(160, 180);
+			SetDex(150, 200);
 			SetInt(1, 5);
-			SetDamage(18, 20);
+			SetDamage(10, 20);
 			SetHits (300 - 400);
 
-			SetSkill(SkillName.Tactics, 80.0, 85);
-			SetSkill(SkillName.Wrestling, 80.0, 85);
+			SetSkill(SkillName.Tactics, 90.0, 95);
+			SetSkill(SkillName.Wrestling, 90.0, 95);
 
 			Fame = 10000;
 			Karma = -10000;

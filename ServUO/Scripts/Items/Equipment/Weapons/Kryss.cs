@@ -5,7 +5,7 @@ namespace Server.Items
 {
     [Alterable(typeof(DefBlacksmithy), typeof(GargishKryss))]
     [FlipableAttribute(0x1401, 0x1400)]
-    public class Kryss : BaseSpear
+    public class Kryss : BaseKnife
     {
         [Constructable]
         public Kryss()
@@ -44,14 +44,14 @@ namespace Server.Items
         {
             get
             {
-                return 10;
+                return 12;
             }
         }
         public override int AosMaxDamage
         {
             get
             {
-                return 12;
+                return 14;
             }
         }
         public override int AosSpeed

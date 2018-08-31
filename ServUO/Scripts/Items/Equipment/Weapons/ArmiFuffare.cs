@@ -184,14 +184,14 @@ namespace Server.Items
         {
             get
             {
-                return 17;
+                return 8;
             }
         }
         public override int AosMaxDamage
         {
             get
             {
-                return 20;
+                return 10;
             }
         }
         public override int AosSpeed
@@ -205,7 +205,7 @@ namespace Server.Items
         {
             get
             {
-                return 4.0f;
+                return 1.75f;
             }
         }
         public override int OldStrengthReq
@@ -262,6 +262,20 @@ namespace Server.Items
             get
             {
                 return 200;
+            }
+        }
+        public override SkillName DefSkill
+        {
+            get
+            {
+                return SkillName.Fencing;
+            }
+        }
+        public override WeaponType DefType
+        {
+            get
+            {
+                return WeaponType.Piercing;
             }
         }
         public override void Serialize(GenericWriter writer)

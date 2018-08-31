@@ -31,7 +31,7 @@ namespace Server.Mobiles
 			{
 				Body = 0x190;
 				Name = NameList.RandomName("male");
-				if (Utility.RandomDouble () < 0.1) {
+				if (Utility.RandomDouble () < 0.9) {
 					AddItem (new PlateChest ());
 				} 
 				else {
