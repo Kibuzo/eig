@@ -35,7 +35,7 @@ namespace Server.Items
         {
             get
             {
-                return 40;
+                return 10;
             }
         }
         public override int AosMinDamage

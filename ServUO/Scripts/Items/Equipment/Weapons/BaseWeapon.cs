@@ -1482,7 +1482,7 @@ namespace Server.Items
 				delayInSeconds = ticks * 0.4; //era * 0.25
 				if (heavy>0){
 					delayInSeconds*=(1+heavy/50);
-					m.Stam-=(int)(heavy/5);
+					m.Stam-=4+(int)(heavy/8);
 					m.SendMessage("You can swing your weapon, but it takes a lot of effort!");
 				}
 			}
