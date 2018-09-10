@@ -1483,7 +1483,7 @@ namespace Server.Items
 				if (heavy>0){
 					delayInSeconds*=(1+heavy/50);
 					m.Stam-=(int)(1+heavy/5);
-					m.SendMessage("You can swing your weapon, but it takes a lot of effort!");
+					m.SendMessage("You manage to raise your weapon, but it takes a lot of effort!");
 				}
 			}
 			else if (Core.AOS)
